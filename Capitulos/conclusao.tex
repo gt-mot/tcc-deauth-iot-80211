@@ -1,0 +1,74 @@
+% !TeX encoding = UTF-8
+\chapter{Conclusão}
+\label{cap:conclusao}
+
+\section{Retomada do problema e do recorte}
+
+Este trabalho partiu do seguinte problema de pesquisa: de que maneira microcontroladores de baixo custo podem ser explorados para identificar e testar vulnerabilidades no protocolo IEEE 802.11 em um ambiente composto por dispositivos IoT? Para respondê-lo, foi conduzido um estudo de caso em ambiente laboratorial controlado, com o recorte definido na Seção~\ref{sec:delimitacao}: uma única plataforma de ataque, a LILYGO T-Embed CC1101 Plus, baseada no ESP32-S3 e executando o \textit{firmware} Bruce; um único ponto de acesso, o TP-Link EX1500, operando em 2,4~GHz; os dispositivos avaliados (câmera IP, lâmpada inteligente, tomada inteligente e um \textit{smartphone} de referência); e as configurações de segurança do ponto de acesso WPA2-PSK sem PMF oferecido e modo misto WPA2/WPA3 com PMF opcional. O ataque avaliado foi exclusivamente o de desautenticação, e as evidências foram capturas em modo monitor e registros de conectividade por \textit{ping}.
+
+\section{Resposta ao problema de pesquisa}
+
+A resposta é apresentada separando o que foi medido, o que foi observado no funcionamento dos dispositivos e o que é interpretação.
+
+\textbf{Resultado medido.} No cenário WPA2, a tomada, a lâmpada e o \textit{smart\-phone} receberam quadros de desautenticação a eles direcionados e apresentaram intervalos sem resposta a \textit{ping}, em proporção expressiva da duração dos registros (Figura~\ref{fig:comparacao_pmf}), com os valores médios descritos na Tabela~\ref{tab:consolidacao-resultados}. A câmera, nesse cenário, não recuperou a conectividade sem reinício manual em nenhuma das execuções com \textit{ping}, e o intervalo sem resposta de uma delas só pode ser indicado como limite inferior, pois a captura terminou antes do reinício (Tabela~\ref{tab:consolidacao-resultados}). No modo misto, a câmera e a tomada voltaram a perder a conectividade, a lâmpada não registrou intervalo sem resposta, e o \textit{smartphone} manteve a associação com intervalos sem resposta de menor proporção que no cenário WPA2 (Figura~\ref{fig:comparacao_pmf}).
+
+\textbf{Observação funcional.} Os dispositivos diferiram no modo de recuperação (Seção~\ref{subsec:padroes}): a câmera interrompeu o vídeo e não recuperou a conectividade sem reinício manual, exigido em todas as execuções com \textit{ping}, nos dois cenários (em uma delas, reassociou-se repetidamente durante o ataque, sem manter o \textit{ping} estável); a tomada e a lâmpada, no cenário WPA2, reconectaram-se de forma automática e intermitente enquanto o ataque persistia; e o \textit{smartphone} exibiu uma mensagem de senha incorreta e só reconectou após intervenção manual.
+
+\textbf{Interpretação.} Nas condições descritas, os dispositivos associados sem PMF apresentaram perda de conectividade durante os testes. Na execução descrita em modo misto, a lâmpada negociou WPA3-SAE com PMF obrigatório (observado em captura dedicada) e não apresentou perda de associação; o \textit{smartphone}, para o qual o AKM negociado não pôde ser observado, mas cujos quadros de gerenciamento trocados com o ponto de acesso estavam protegidos, também não apresentou perda de associação, embora tenha registrado intervalos sem resposta a \textit{ping}. Esse padrão é compatível com a proteção esperada dos quadros robustos de gerenciamento. O número reduzido de repetições e a ausência de uma condição WPA2 com PMF limitam a atribuição exclusiva do efeito a um único mecanismo.
+
+Assim, respondendo ao problema: nas condições estudadas, um microcontrolador de baixo custo baseado em ESP32-S3 foi suficiente para \emph{testar} a vulnerabilidade, isto é, para emitir quadros de desautenticação dirigidos que, nas associações sem PMF, foram acompanhados de perda de conectividade. \emph{Identificar} a condição explorada, porém, exigiu um instrumento separado: foi a estação de captura em modo monitor que permitiu verificar, no elemento RSN de cada associação, se o PMF havia sido negociado. Os resultados referem-se à disponibilidade dos dispositivos; o estudo não envolveu quebra de criptografia nem obtenção de credenciais, e não autoriza concluir que toda rede WPA2 seja igualmente vulnerável, já que o WPA2 com PMF não foi avaliado.
+
+Transpostos de forma analítica para o monitoramento de câmaras de vacinas, esses resultados sugerem que um sensor associado sem PMF poderia ter a telemetria e o alarme remoto interrompidos sem que a refrigeração fosse afetada, o que reforça a importância de negociar o PMF e de manter alarme e registro locais independentes da rede (Seção~\ref{subsec:cenario_vacinas}).
+
+\section{Atendimento aos objetivos específicos}
+\label{sec:atendimento_objetivos}
+
+Cada objetivo específico é retomado abaixo com a redação da introdução.
+
+\begin{enumerate}[label=\arabic*.]
+    \item \textit{Configurar o ambiente de ataque, preparando microcontroladores de baixo custo da família ESP com firmwares adequados para a injeção de pacotes.} \textbf{Atendido, com uma única plataforma.} O T-Embed CC1101 Plus (ESP32-S3) recebeu o \textit{firmware} Bruce, cuja capacidade de injeção foi validada no ensaio piloto, com quadros de desautenticação registrados na captura (Tabela~\ref{tab:metricas-piloto}); a bancada está documentada nas Seções~\ref{sec:configuracao_rede_teste} a~\ref{sec:condicoes_experimentais}. Não foram avaliados outros microcontroladores da família ESP.
+
+    \item \textit{Executar testes de ataque de desautenticação contra os dispositivos alvo.} \textbf{Atendido.} Todos os dispositivos foram submetidos ao ataque nas configurações de segurança avaliadas, e a captura registrou quadros de desautenticação direcionados a cada um (Tabela~\ref{tab:consolidacao-resultados}). Uma das capturas do \textit{smartphone} no modo misto não contém quadros direcionados a ele e não foi considerada execução válida (Seção~\ref{sec:criterios_validacao}).
+
+    \item \textit{Mensurar o tempo de indisponibilidade e o tempo de reconexão dos equipamentos sob diferentes cenários de ataque.} \textbf{Atendido parcialmente.} O tempo acumulado sem resposta a \textit{ping}, a maior queda contínua e os valores por execução foram medidos em todas as execuções com \textit{ping} e constam das Tabelas~\ref{tab:consolidacao-resultados} e~\ref{tab:consolidacao-recuperacao} e das Tabelas~\ref{tab:registro-execucoes} e~\ref{tab:registro-metricas}. Permaneceram não medidos o tempo preciso de reconexão e a recuperação da função dos dispositivos, que dependeriam de um registro próprio por aplicação. A câmera e o modo misto tiveram menos repetições que o planejado.
+
+    \item \textit{Coletar e analisar os dados de tráfego capturados na rede para validar a eficácia técnica dos testes e documentar as falhas exploradas.} \textbf{Atendido parcialmente.} As capturas foram analisadas com \textit{tshark} para contar os quadros de desautenticação, identificar novas associações e extrair o AKM e os bits MFPC/MFPR de cada dispositivo (Tabela~\ref{tab:negociacao-seguranca} e Apêndice~\ref{sec:evidencias-rsn}). A partir da contagem de quadros de autenticação e de \textit{Association Request} por execução, foi possível classificar como desassociação confirmada os ensaios da tomada, da lâmpada e do \textit{smartphone} em WPA2, os da tomada e da câmera no modo misto e o da câmera em \texttt{CAM\_\allowbreak{}WPA2\_\allowbreak{}R04} (Tabela~\ref{tab:consolidacao-recuperacao}). Ficou sem evidência direta o AKM do \textit{smartphone} no modo misto, cuja associação não foi capturada, restando apenas o indício indireto dos quadros de gerenciamento protegidos.
+\end{enumerate}
+
+\section{Contribuições}
+
+O trabalho deixa as seguintes contribuições, todas restritas ao caso estudado:
+
+\begin{itemize}
+    \item uma \textbf{bancada documentada} de baixo custo para ensaios de desautenticação, com inventário, condições de execução e cadeia de processamento dos dados descritos de forma que possam ser verificados e repetidos (Capítulo~\ref{cap:desenvolvimento});
+    \item a \textbf{caracterização dos comportamentos} dos dispositivos avaliados sob o mesmo ataque, mostrando que um mesmo procedimento produz efeitos distintos, da reconexão automática intermitente à necessidade de reinício manual, conforme a implementação de cada equipamento (Seção~\ref{subsec:padroes});
+    \item a \textbf{análise da segurança negociada por dispositivo}, que mostrou, a partir do elemento RSN dos quadros de associação, que a configuração do roteador não descreve a situação de cada estação: em modo misto, dispositivos legados continuaram associados sem PMF ao lado de dispositivos que o negociaram (Apêndice~\ref{sec:evidencias-rsn}).
+\end{itemize}
+
+\section{Limitações}
+
+As conclusões devem ser lidas à luz das seguintes limitações, detalhadas na Seção~\ref{subsec:limitacoes_resultados}:
+
+\begin{itemize}
+    \item \textbf{Número de repetições:} o planejado foi atingido apenas no cenário WPA2, para a tomada, a lâmpada e o \textit{smartphone}; a câmera e o modo misto tiveram menos repetições que o previsto, o que não permite estimar a variação entre execuções, e em parte das execuções da câmera e da tomada, o intervalo sem resposta não tem fim medido e foi registrado como limite inferior (Seção~\ref{subsec:limitacoes_resultados} e Tabela~\ref{tab:consolidacao-resultados}).
+    \item \textbf{Ausência de condição WPA2 com PMF:} SAE, PMF e o próprio dispositivo variaram juntos, o que impede separar o efeito do PMF do efeito do AKM e da implementação de cada equipamento.
+    \item \textbf{Quadros em difusão nos ensaios da tomada em WPA2:} nesses ensaios, a captura registrou proporção de quadros de desautenticação em difusão muito maior que nos demais ensaios considerados na análise, com o mesmo método de ataque e causa não investigada; essa diferença limita a comparação direta desses ensaios com os demais.
+    \item \textbf{Limites da captura passiva:} a captura por rádio depende das condições de recepção do adaptador e não constitui inventário integral do canal; quadros podem não ter sido registrados, e associações anteriores ao início da captura, como a do \textit{smartphone} no modo misto, não puderam ser observadas.
+    \item \textbf{Limites do \textit{ping}:} a ausência de resposta indica indisponibilidade de rede, mas não comprova desassociação, pode ser afetada por economia de energia ou por perdas de recepção e não mede a recuperação da função do dispositivo.
+    \item \textbf{Dependência de serviços externos:} o funcionamento percebido da câmera, da lâmpada e da tomada depende de aplicativo e de serviços na internet, de modo que a retomada da associação Wi-Fi e a retomada da função são eventos distintos, e o segundo não foi medido.
+    \item \textbf{Faixa e equipamentos:} apenas 2,4~GHz, um único ponto de acesso e uma única plataforma de ataque. A não avaliação de dispositivos em 5~GHz decorre da limitação do \textit{hardware} de ataque e de captura e não indica que essa faixa seja protegida.
+    \item \textbf{Cenário de aplicação analítico:} o monitoramento de câmaras de vacinas foi discutido a partir dos resultados da bancada, sem ensaio com registradores de temperatura.
+\end{itemize}
+
+\section{Trabalhos futuros}
+
+A partir dessas limitações, sugerem-se os seguintes desdobramentos:
+
+\begin{itemize}
+    \item realizar mais séries de ensaios, com o número de repetições por dispositivo e configuração previsto na metodologia (Capítulo~\ref{cap:metodologia}), para estimar a variação dos resultados;
+    \item incluir uma condição de WPA2 com PMF, opcional e obrigatório, em um ponto de acesso que a ofereça, para separar o efeito do PMF do efeito do SAE;
+    \item medir a recuperação funcional, como o retorno do vídeo da câmera ou a resposta da lâmpada e da tomada a comandos, além da retomada da associação;
+    \item repetir os ensaios com outras plataformas de ataque e outros \textit{firmwares}, e com \textit{hardware} de ataque e de captura capaz de operar em 5~GHz, para avaliar dispositivos nessa faixa;
+    \item testar registradores de temperatura comerciais com Wi-Fi, usados no monitoramento de vacinas, sob o mesmo ataque, verificando a segurança negociada, a reconexão, a memória local e o comportamento dos alarmes local e remoto;
+    \item registrar, desde o início de cada ensaio, distância, potência de transmissão e carga da rede, e capturar a associação de todos os dispositivos antes do ataque.
+\end{itemize}

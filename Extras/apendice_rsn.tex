@@ -1,0 +1,64 @@
+% !TeX root = ../main.tex
+% !TeX encoding = UTF-8
+% ============================================================================
+% APÊNDICE A — Evidências da segurança negociada (elemento RSN).
+% Regra: preencher SOMENTE com dados reais extraídos das capturas (.pcapng).
+% Campos extraídos com tshark: wlan.rsn.akms.type, wlan.rsn.pcs.type,
+% wlan.rsn.capabilities.mfpc, wlan.rsn.capabilities.mfpr, wlan.fixed.status_code.
+% \PREENCHER = campo não observado nas capturas disponíveis.
+% ============================================================================
+
+\chapter{Evidências da segurança negociada nas capturas}
+\label{sec:evidencias-rsn}
+
+Este apêndice reúne as evidências, extraídas diretamente dos arquivos de captura, que sustentam a segurança atribuída a cada dispositivo e resumida na Tabela~\ref{tab:negociacao-seguranca}. O critério adotado é o elemento RSN (\textit{Robust Security Network}) transmitido pela estação no quadro de \textit{Association Request}, que informa o conjunto de gerenciamento de chaves (AKM) selecionado e os bits de capacidade \textit{Management Frame Protection Capable} (MFPC) e \textit{Management Frame Protection Required} (MFPR). O PMF só é negociado quando a estação e o ponto de acesso indicam MFPC~=~1; MFPR~=~1 indica que a parte que o anuncia exige o PMF.
+
+O campo \textit{Authentication algorithm} do quadro de autenticação IEEE~802.11 não é usado como evidência, pois o valor 0 (\textit{Open System}) precede tanto o WPA2-PSK sem PMF quanto o WPA2-PSK com PMF e outras combinações; ele não identifica o AKM nem o estado do PMF. Apenas o valor 3 (SAE) tem significado específico, por indicar a troca SAE do WPA3-\textit{Personal}. Da mesma forma, o painel administrativo do roteador (Figuras~\ref{fig:painel_roteador_wpa2} e~\ref{fig:painel_roteador_wpa3}) registra a configuração do ponto de acesso, e não o que cada estação efetivamente negociou.
+
+A Tabela~\ref{tab:ap-rsn-ap} apresenta o elemento RSN anunciado pelo ponto de acesso nos quadros de \textit{beacon} de cada cenário, que define o que o ponto de acesso oferece. Observa-se que, no cenário WPA2, o ponto de acesso anuncia somente o AKM~2 (PSK) e MFPC~=~0, isto é, não oferece PMF; no cenário misto, anuncia os AKM~2 (PSK) e~8 (SAE), com MFPC~=~1 e MFPR~=~0, ou seja, oferece PMF de forma opcional.
+
+\begin{table}[htbp]
+\centering
+\caption{Elemento RSN anunciado pelo ponto de acesso (\textit{beacon})}
+\label{tab:ap-rsn-ap}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{|p{0.11\textwidth}|p{0.21\textwidth}|p{0.09\textwidth}|p{0.15\textwidth}|p{0.10\textwidth}|p{0.075\textwidth}|p{0.075\textwidth}|}
+\hline
+\textbf{Cenário} & \textbf{Arquivo} & \textbf{Quadro} & \textbf{AKM} & \textbf{Cifra par} & \textbf{MFPC} & \textbf{MFPR} \\ \hline
+WPA2 & \texttt{TOMADA\_WPA2\_R01} & 1 & 2 (PSK) & CCMP & 0 & 0 \\ \hline
+Misto & \texttt{TOMADA\_WPA3\_R01} & 1 & 2 (PSK), 8 (SAE) & CCMP & 1 & 0 \\ \hline
+\end{tabular}
+\legend{Fonte: elaborado pelo autor a partir dos arquivos de captura (2026). Os mesmos valores foram observados em todos os \textit{beacons} do ponto de acesso em cada arquivo do respectivo cenário, com a exceção indicada na nota~f da Tabela~\ref{tab:ap-rsn-estacoes}.}
+\end{table}
+
+A Tabela~\ref{tab:ap-rsn-estacoes} apresenta, para cada dispositivo e cenário, um quadro de \textit{Association Request} representativo, com o número do quadro no arquivo indicado, os campos RSN enviados pela estação e o código de \textit{status} da resposta do ponto de acesso. A coluna \textit{PMF negociado} resulta da combinação entre o MFPC da estação e o MFPC do ponto de acesso (Tabela~\ref{tab:ap-rsn-ap}).
+
+\begin{landscape}
+\begin{table}[p]
+\centering
+\caption{Elemento RSN enviado por dispositivo no \textit{Association Request}}
+\label{tab:ap-rsn-estacoes}
+\marcadoresTabela
+\scriptsize
+\setlength{\tabcolsep}{2.5pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{|L{2.0cm}|L{1.3cm}|L{3.6cm}|L{2.4cm}|L{1.5cm}|L{1.1cm}|L{1.1cm}|L{1.1cm}|L{2.0cm}|L{1.6cm}|L{3.4cm}|}
+\hline
+\textbf{Dispositivo} & \textbf{Cenário} & \textbf{Arquivo} & \textbf{Quadro (\textit{Assoc. Req.} $\rightarrow$ \textit{Resp.})} & \textbf{AKM} & \textbf{Cifra par} & \textbf{MFPC} & \textbf{MFPR} & \textbf{\textit{Status} da resposta} & \textbf{PMF negociado} & \textbf{Observação} \\ \hline
+Câmera & WPA2 & \texttt{LAMP\_WPA2\_R01} & 742 $\rightarrow$ 744 & 2 (PSK) & CCMP & 0 & 0 & 0 (sucesso) & Não & Reassociação capturada durante outro ensaio\textsuperscript{a} \\ \hline
+Câmera & WPA2 & \texttt{CAM\_WPA2\_R04} & 13370 $\rightarrow$ 13372 & 2 (PSK) & CCMP & 0 & 0 & 0 (sucesso) & Não & Associação durante o ataque (oito ocorrências)\textsuperscript{b} \\ \hline
+Câmera & WPA2 & \texttt{CAM\_WPA2\_R03} & nenhum & não observado & --- & --- & --- & --- & Não observado & Nenhuma associação da câmera na captura\textsuperscript{c} \\ \hline
+Câmera & misto & \texttt{CAM\_WPA3\_R01} & 2361 $\rightarrow$ 2364 & 2 (PSK) & CCMP & 0 & 0 & 0 (sucesso) & Não & Estação não declara MFPC \\ \hline
+Tomada & WPA2 & \texttt{TOMADA\_WPA2\_R01} & 3630 $\rightarrow$ 3632 & 2 (PSK) & CCMP & 0 & 0 & 0 (sucesso) & Não & --- \\ \hline
+Tomada & misto & \texttt{TOMADA\_WPA3\_R01} & 1221 $\rightarrow$ 1223 & 2 (PSK) & CCMP & 0 & 0 & 0 (sucesso) & Não & Estação não declara MFPC \\ \hline
+Lâmpada & WPA2 & \texttt{LAMP\_WPA2\_R01} & 3357 $\rightarrow$ 3364 & 2 (PSK) & CCMP & 0 & 0 & 0 (sucesso) & Não & --- \\ \hline
+Lâmpada & misto & \texttt{LAMP\_WPA3\_HANDSHAKE} & 5637 $\rightarrow$ 5643; 5748 $\rightarrow$ 5754 & 8 (SAE) & CCMP & 1 & 1 & 30; depois 0 (sucesso) & Sim & Autenticação SAE nos quadros 5626--5635 (\textit{auth alg} 3); captura separada, após reinício\textsuperscript{d} \\ \hline
+\textit{Smartphone} & WPA2 & \texttt{PHONE\_WPA2\_R01} & 11053 $\rightarrow$ 11064 & 2 (PSK) & CCMP & 1 & 0 & 0 (sucesso) & Não & Estação declara MFPC, mas o ponto de acesso não (MFPC~=~0) \\ \hline
+\textit{Smartphone} & misto & \texttt{PHONE\_WPA3} (R01--R03) & nenhum & não observado & --- & --- & --- & --- & Indício indireto & Nenhum quadro de autenticação ou associação do \textit{smartphone} nas capturas \texttt{PHONE\_WPA3}\textsuperscript{e} \\ \hline
+\end{tabular}
+\legend{Fonte: elaborado pelo autor a partir dos arquivos de captura (2026). AKM: 2~=~PSK; 8~=~SAE. CCMP: AES-CCMP. \textsuperscript{a}Esta linha mantém a reassociação da câmera registrada durante o ensaio da lâmpada, no mesmo cenário; a evidência da própria câmera em WPA2 está na linha de \texttt{CAM\_WPA2\_R04}. O arquivo do piloto não contém associação da câmera. \textsuperscript{b}Em \texttt{CAM\_WPA2\_R04}, a associação da câmera em WPA2 (quadro 13370; AKM 2; cifra CCMP; MFPC e MFPR iguais a 0) foi capturada durante o ataque, em 88,6 a 95,5~s relativos ao início da captura, com oito trocas de autenticação e associação, todas com \textit{status} 0; uma nova associação ocorreu após o reinício (quadros 76141 e 76143, em 184,5~s). \textsuperscript{c}Em \texttt{CAM\_WPA2\_R03} não há quadros de associação da câmera, e a captura foi encerrada antes do reinício da câmera (Apêndice~\ref{sec:registro-execucoes}). \textsuperscript{d}A associação da lâmpada não ocorreu durante o ensaio de ataque (\texttt{LAMP\_WPA3\_R01}), no qual a lâmpada permaneceu associada; a evidência provém de uma captura dedicada, feita após o reinício da lâmpada com o roteador na mesma configuração. O \textit{status} 30 na primeira tentativa corresponde a rejeição temporária com pedido de nova tentativa. \textsuperscript{e}O \textit{smartphone} já estava associado no início das capturas e não perdeu a associação; por isso o AKM não foi observado. Indício indireto: quadros \textit{Action} com o bit \textit{Protected} ativo no cenário misto (764 em \texttt{PHONE\_WPA3\_R01}; 7 em \texttt{R02}; 505 em \texttt{R03}) e inativo no WPA2 (20, 15 e 64 em \texttt{PHONE\_WPA2\_R01} a \texttt{R03}), compatível com PMF, mas sem distinguir SAE de PSK com PMF. \textsuperscript{f}Os \textit{beacons} de \texttt{CAM\_WPA2\_R02} anunciam o cenário misto (AKM~2 e~8, MFPC~=~1); por isso essa execução é tratada como modo misto.}
+\end{table}
+\end{landscape}
+
+Em síntese, as capturas mostram que câmera e tomada selecionaram o AKM~2 (PSK) sem declarar MFPC nos dois cenários, de modo que o PMF não foi negociado mesmo quando o ponto de acesso o ofereceu (cenário misto). A lâmpada, no cenário misto, selecionou o AKM~8 (SAE) com MFPC~=~1 e MFPR~=~1. Para o \textit{smartphone} no cenário misto, o AKM e os bits MFPC/MFPR não foram observados, pois nenhuma associação dele foi capturada; a evidência de PMF é apenas indireta. Nenhuma condição de WPA2-PSK com PMF negociado foi registrada nos ensaios: no cenário WPA2 o ponto de acesso não ofereceu PMF, e no cenário misto as estações que declararam MFPC (lâmpada e, indiretamente, \textit{smartphone}) também tinham WPA3 disponível.

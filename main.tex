@@ -1,0 +1,190 @@
+% !TeX encoding = UTF-8
+
+%==============================================================================
+% Arquivo principal do Trabalho de Conclusão de Curso
+%==============================================================================
+
+%==============================================================================
+% DECLARAÇÃO DO TIPO DE DOCUMENTO
+%==============================================================================
+\documentclass{abnt-UDC-CC}
+
+%==============================================================================
+% PACOTES NECESSÁRIOS
+%==============================================================================
+
+% Utilizado em tabelas e quadros com células mescladas.
+\usepackage{multirow}
+
+% Permite controlar a posição de figuras com a opção [H].
+\usepackage{float}
+
+%==============================================================================
+% PACOTES DESATIVADOS PARA REDUZIR O TEMPO DE COMPILAÇÃO
+%
+% Os diagramas do TCC são arquivos JPG/PNG inseridos por \includegraphics.
+% Portanto, TikZ e PGFPlots não são necessários.
+%==============================================================================
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usetikzlibrary{calc}
+\usetikzlibrary{arrows.meta,shapes.geometric,fit,backgrounds}
+\usetikzlibrary{decorations.pathreplacing}
+% \usepackage{pgfplots}
+% \pgfplotsset{compat=newest}
+
+% Pacotes não utilizados no texto atual.
+% \usepackage{adjustbox}
+\usepackage{longtable}
+% \usepackage{xtab}
+% \usepackage[listofformat=subparens,subrefformat=parens,labelformat=parens]{subfig}
+% \usepackage{lipsum}
+
+%==============================================================================
+% CAMINHOS PARA AS IMAGENS
+%==============================================================================
+\graphicspath{{./Imagens/}{./figuras/}{./Graficos/}}
+
+%==============================================================================
+% INFORMAÇÕES DO TRABALHO
+%==============================================================================
+\input{Configuracoes/dados_documento}
+
+%==============================================================================
+% SEPARAÇÃO DE SÍLABAS
+%==============================================================================
+\hyphenation{Mar-ca-ção}
+\hyphenation{mar-ca-ção}
+\hyphenation{lin-gua-gem}
+\hyphenation{pro-fis-sio-nais}
+\hyphenation{ar-qui-vos}
+\hyphenation{fer-ra-men-tas}
+\hyphenation{ma-te-ri-al}
+
+%==============================================================================
+% MARCADORES DE REVISÃO (remover antes da versão final)
+%==============================================================================
+% Campo ainda não preenchido com dado real (não estimar).
+\newcommand{\PREENCHER}{\textcolor{red}{\textbf{[PREENCHER]}}}
+% Valor presente no texto, mas sob verificação nos logs pelo autor.
+\newcommand{\CONFERIR}[1]{\textcolor{orange}{#1 \textbf{[CONFERIR]}}}
+% Versão compacta dos marcadores, para uso dentro de tabelas estreitas:
+% [PREENCHER] encolhe até caber na célula; [CONFERIR] vira o índice [C].
+\newcommand{\marcadoTab}[1]{%
+  \sbox0{\textcolor{red}{\textbf{#1}}}%
+  \ifdim\wd0>\linewidth\resizebox{\linewidth}{!}{\usebox0}%
+  \else\usebox0\fi}
+\newcommand{\marcadoresTabela}{%
+  \renewcommand{\PREENCHER}{\marcadoTab{[PREENCHER]}}%
+  \renewcommand{\CONFERIR}[1]{\textcolor{orange}{##1\textsuperscript{\textbf{[C]}}}}}
+
+% Coluna de largura fixa alinhada à esquerda (usada nas tabelas largas do Cap. 5).
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+%==============================================================================
+% INÍCIO DO DOCUMENTO
+%==============================================================================
+\begin{document}
+
+\frenchspacing
+
+%==============================================================================
+% ELEMENTOS PRÉ-TEXTUAIS
+%==============================================================================
+
+\imprimircapa
+
+\imprimirfolhaderosto*
+
+% Ficha catalográfica removida a pedido do autor (não exigida pela UDC).
+% Para reativar, descomente a linha abaixo.
+% \imprimirfichacatalografica
+
+% Folha de aprovação removida a pedido do autor (banca/data ainda não definidas).
+% Para reativar, descomente a linha abaixo e preencha a banca/data em Configuracoes/dados_documento.tex.
+% \imprimirfolhadeaprovacao
+\imprimirdedicatoria
+\imprimiragradecimento
+\imprimirepigrafe
+\input{Apresentacao/resumo_portugues}
+\input{Apresentacao/resumo_ingles}
+
+%==============================================================================
+% LISTAS
+%==============================================================================
+
+\imprimirlistafiguras
+
+\imprimirlistatabelas
+\imprimirlistaquadros
+% \imprimirlistagraficos
+% \imprimirlistacodigos
+
+\input{Configuracoes/siglas}
+
+% \input{Configuracoes/simbolos}
+
+\imprimirsumario
+
+%==============================================================================
+% ELEMENTOS TEXTUAIS
+%==============================================================================
+
+\textual
+\pagestyle{abnt_CC-UDC}
+
+%==============================================================================
+% CAPÍTULOS
+%==============================================================================
+
+\input{Capitulos/introducao}
+\input{Capitulos/fundamento_teorico}
+\input{Capitulos/materiais_metodo}
+\input{Capitulos/desenvolvimento}
+\input{Capitulos/analise_resultados}
+\input{Capitulos/conclusao}
+
+%==============================================================================
+% ELEMENTOS PÓS-TEXTUAIS
+%==============================================================================
+
+\postextual
+
+%==============================================================================
+% REFERÊNCIAS BIBLIOGRÁFICAS
+%==============================================================================
+
+% NBR 6023: em monografias/TCCs, ano também logo após o título (opção do abntex2).
+\citeoption{abnt-thesis-year=both}
+\bibliography{Configuracoes/bibliografia}
+
+%==============================================================================
+% APÊNDICES (NBR 14724; Normas UDC, item 2.3.3)
+%==============================================================================
+% Material elaborado pelo autor, após as Referências. Folha divisória
+% "APÊNDICES"; cada apêndice identificado por letra maiúscula, travessão e
+% título, na ordem em que é mencionado pela primeira vez no texto.
+\begin{apendicesenv}
+    \partapendices
+    \input{Extras/apendice_rsn}         % APÊNDICE A
+    \input{Extras/apendice_execucoes}   % APÊNDICE B
+    \input{Extras/apendice_protocolo}   % APÊNDICE C
+\end{apendicesenv}
+
+%==============================================================================
+% REPOSITÓRIO DO TRABALHO (depois dos apêndices, a pedido do autor)
+%==============================================================================
+\input{Extras/repositorio}
+
+%==============================================================================
+% ANEXOS
+%==============================================================================
+
+% \begin{anexosenv}
+%     \partanexos
+%     \input{Extras/anexo1}
+%     \input{Extras/anexo2}
+%     \input{Extras/anexo3}
+% \end{anexosenv}
+
+\end{document}

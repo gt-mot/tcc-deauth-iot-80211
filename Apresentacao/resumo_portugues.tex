@@ -1,0 +1,11 @@
+% ---
+% RESUMO PORTUGUÊS
+% ---
+\begin{resumo}[RESUMO]
+\noindent A popularização de dispositivos da Internet das Coisas conectados por redes sem fio expõe esses equipamentos a vulnerabilidades legadas da família IEEE 802.11, entre elas a falsificação de quadros de gerenciamento quando a proteção definida na emenda 802.11w não é negociada. Este trabalho investiga como microcontroladores de baixo custo podem ser usados para testar essa vulnerabilidade em um ambiente com dispositivos conectados, com o objetivo de analisá-la e demonstrá-la em laboratório controlado. Trata-se de pesquisa aplicada, exploratória e descritiva, conduzida como estudo de caso experimental e restrita ao ataque de desautenticação. A bancada reuniu um roteador doméstico, uma plataforma de ataque baseada em microcontrolador, uma câmera, uma lâmpada, uma tomada e um \textit{smartphone} de referência, avaliados em duas configurações do ponto de acesso: sem proteção de quadros de gerenciamento e em modo misto, com proteção opcional. Os ensaios foram registrados por captura de quadros e por medidas de conectividade, e a segurança negociada por cada dispositivo foi verificada nos quadros de associação. Sem proteção, a câmera, a tomada, a lâmpada e o \textit{smartphone} apresentaram interrupções de conectividade expressivas, com recuperações distintas entre si. No modo misto, a câmera e a tomada negociaram o acesso sem proteção e voltaram a perder a conectividade, enquanto a lâmpada, que negociou proteção obrigatória, não apresentou interrupções. Conclui-se que o microcontrolador foi suficiente para testar a vulnerabilidade e que o padrão observado é compatível com a proteção esperada dos quadros de gerenciamento. O número reduzido de repetições e a ausência de uma condição WPA2 com proteção de quadros de gerenciamento impedem atribuir o efeito exclusivamente a esse mecanismo. Os resultados referem-se à disponibilidade dos dispositivos e não envolvem quebra de criptografia nem obtenção de credenciais.
+
+ \vspace{\onelineskip}
+
+ \noindent
+ \textbf{Palavras-chave}: IEEE 802.11. Desautenticação. Internet das Coisas. Proteção de quadros de gerenciamento. ESP32-S3.
+\end{resumo}

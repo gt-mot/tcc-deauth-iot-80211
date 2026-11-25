@@ -1,0 +1,57 @@
+% !TeX encoding = UTF-8
+\chapter{Introdução}
+
+O avanço da computação e a Quarta Revolução Industrial contribuíram para a popularização da Internet das Coisas (IoT) em ambientes residenciais e corporativos \cite{James2023}. O tema desta pesquisa insere-se no campo da segurança de redes e trata de vulnerabilidades do protocolo de comunicação sem fio IEEE 802.11 (Wi-Fi) quando aplicado a esses ambientes, utilizando um microcontrolador de baixo custo como plataforma de testes \cite{KristiyantoErnastuti2020}.
+
+A literatura registra que a adoção da IoT trouxe ganhos de conveniência acompanhados de desafios de segurança em dispositivos residenciais, como câmeras IP e automações domésticas \cite{KristiyantoErnastuti2020}. Parte desses desafios decorre de restrições de \textit{hardware} adotadas para manter o baixo custo, como baixo poder de processamento, armazenamento limitado e restrições energéticas \cite{FarhadPyun2022}. Essas restrições, porém, não explicam sozinhas a exposição dos dispositivos: a política de atualização de \textit{firmware} de cada fabricante, as decisões de produto sobre quais mecanismos de segurança implementar e a configuração adotada pelo usuário na rede também determinam se um equipamento utiliza ou não proteções disponíveis no padrão \cite{Lima2025}.
+
+Ao mesmo tempo, o próprio padrão IEEE 802.11 carrega vulnerabilidades legadas em sua camada MAC. A principal delas, para este trabalho, é a falta de proteção nativa --- criptografia e autenticação --- nas tramas de gerenciamento, conhecidas como \textit{management frames} \cite{KohliosHayajneh2018}. Quando a proteção de quadros de gerenciamento definida na emenda IEEE~802.11w (PMF) não é negociada, esses quadros circulam sem criptografia nem verificação de integridade, ficando expostos à falsificação.
+
+Embora essas falhas estejam documentadas, ainda há poucos registros sobre como dispositivos IoT comerciais específicos reagem quando submetidos a ataques de desautenticação gerados por plataformas portáteis de baixo custo, e sobre como essa reação se relaciona com a segurança que cada dispositivo efetivamente negocia com o ponto de acesso.
+
+\section{Problema de pesquisa}
+\label{sec:problema}
+
+Diante desse panorama, formula-se o seguinte problema de pesquisa: de que maneira microcontroladores de baixo custo podem ser explorados para identificar e testar vulnerabilidades no protocolo IEEE 802.11 em um ambiente composto por dispositivos IoT?
+
+\section{Delimitação do estudo}
+\label{sec:delimitacao}
+
+O estudo restringe-se ao ataque de desautenticação, isto é, à transmissão de quadros de desautenticação forjados contra dispositivos associados a um ponto de acesso. O recorte experimental compreende:
+
+\begin{itemize}
+    \item uma única plataforma de ataque, a LILYGO T-Embed CC1101 Plus, baseada no ESP32-S3 e executando o \textit{firmware} Bruce;
+    \item um único ponto de acesso (roteador TP-Link EX1500), na faixa de 2,4~GHz, canal 6;
+    \item quatro dispositivos selecionados por conveniência: uma câmera IP, uma lâmpada inteligente, uma tomada inteligente e um \textit{smartphone} usado como referência;
+    \item duas configurações de segurança do ponto de acesso: WPA2-PSK, isto é, \textit{Wi-Fi Protected Access 2} (WPA2) com \textit{Pre-Shared Key} (PSK), e o modo misto WPA2/WPA3, que acrescenta o \textit{Wi-Fi Protected Access 3} (WPA3);
+    \item como evidências, capturas de tráfego IEEE~802.11 em modo monitor e registros de conectividade por \textit{ping}.
+\end{itemize}
+
+Ataques do tipo \textit{Evil Twin}, engenharia social e efeitos sobre o consumo de energia são discutidos no referencial teórico apenas como contexto e não foram testados. Da mesma forma, o monitoramento de câmaras de vacinas é tratado apenas como cenário de aplicação analítico, sem equipamentos de saúde na bancada. Os resultados valem para os equipamentos, versões e configurações efetivamente utilizados e não são generalizados para outros roteadores, dispositivos ou faixas de frequência.
+
+\section{Justificativa}
+
+A realização deste trabalho justifica-se pela necessidade de verificar, em um cenário aplicado, o efeito de técnicas de ataque acessíveis sobre dispositivos IoT de consumo. A difusão de ferramentas portáteis e baratas ampliou o acesso a técnicas capazes de interromper a conexão de dispositivos em redes locais; trabalhos recentes relatam o uso de ferramentas como o Flipper Zero e de plataformas baseadas em microcontroladores portáteis para explorar falhas em redes sem fio \cite{James2023,LitayemAlsadi2023}.
+
+A expressão ``baixo custo'' é usada neste trabalho em sentido comparativo e de acessibilidade. A plataforma de ataque LILYGO T-Embed CC1101 Plus é uma placa de desenvolvimento baseada no microcontrolador ESP32-S3, comercializada no varejo de eletrônica e adquirível por qualquer pessoa, sem necessidade de equipamento especializado. O valor pago pelo autor na aquisição da plataforma foi de R\$~300,00 (trezentos reais), em 21 de setembro de 2026. Para comparação, o Flipper Zero, dispositivo portátil difundido em testes de segurança, custava US\$~169,00 na loja oficial do fabricante e, por não possuir rádio Wi-Fi, depende de uma placa de expansão (\textit{WiFi Devboard}) de US\$~35,00 para ataques ao IEEE~802.11, totalizando US\$~204,00 \cite{FlipperLoja}, o equivalente a aproximadamente R\$~1.200,00 pela cotação do dólar em novembro de 2026 \cite{BCBPtax2026}, sem frete e impostos de importação. A plataforma usada neste trabalho custou R\$~300,00, cerca de um quarto desse valor. Por ser portátil, autônoma e de aquisição simples, representa uma barreira de entrada muito menor do que a de montagens tradicionais de ataque, que dependem de um computador com adaptador em modo monitor e configuração específica. A instrumentação usada neste trabalho apenas para \emph{medir} o ataque --- o adaptador Wi-Fi AR9271, o \textit{notebook} com Kali Linux, o roteador e os dispositivos avaliados --- é distinta da plataforma de ataque e não é necessária para executá-lo.
+
+Do ponto de vista prático, um ambiente com automação ou vigilância pode ter sua disponibilidade afetada por um atacante que utilize dispositivos acessíveis e de fácil transporte. Em ambientes críticos, como os de saúde, em que sensores conectados por Wi-Fi podem ser usados para monitorar a temperatura de vacinas, essa perda de disponibilidade poderia silenciar alarmes remotos; esse cenário é discutido de forma analítica, sem ensaio próprio, na Seção~\ref{subsec:cenario_vacinas}. Os resultados interessam a desenvolvedores de \textit{hardware}, administradores de rede e usuários, por indicarem a importância de adotar mecanismos de segurança disponíveis no padrão, como o PMF, e de considerar a disponibilidade dos dispositivos conectados ao escolher equipamentos e configurações.
+
+Sob a perspectiva acadêmica, este trabalho apresenta-se como um estudo de caso comparativo e uma caracterização empírica: em ambiente laboratorial controlado, compara o comportamento de dispositivos IoT selecionados sob ataque de desautenticação, medindo o tempo sem resposta e a perda de associação, e relaciona esse comportamento à segurança efetivamente negociada por cada dispositivo na associação com o ponto de acesso. Esse registro da segurança negociada por dispositivo é o que este trabalho acrescenta ao estudo de \citeonline{KristiyantoErnastuti2020}, que também empregou câmera IP, ponto de acesso e microcontrolador em ataques de desautenticação.
+
+\section{Objetivo geral}
+
+Analisar e demonstrar, na prática, em um ambiente laboratorial controlado, as vulnerabilidades do protocolo IEEE 802.11 em dispositivos IoT comerciais, utilizando microcontroladores de baixo custo.
+
+\section{Objetivos específicos}
+
+\begin{enumerate}[label=\arabic*.]
+    \item Configurar o ambiente de ataque, preparando microcontroladores de baixo custo da família ESP com \textit{firmwares} adequados para a injeção de pacotes.
+    \item Executar testes de ataque de desautenticação contra os dispositivos alvo.
+    \item Mensurar o tempo de indisponibilidade e o tempo de reconexão dos equipamentos sob diferentes cenários de ataque.
+    \item Coletar e analisar os dados de tráfego capturados na rede para validar a eficácia técnica dos testes e documentar as falhas exploradas.
+\end{enumerate}
+
+\section{Organização do trabalho}
+
+Além desta introdução, o trabalho está organizado em cinco capítulos e três apêndices. O Capítulo~\ref{cap:fund_teorico} apresenta o referencial teórico sobre o IEEE~802.11, os quadros de gerenciamento e o PMF, as plataformas da família ESP e as ameaças à IoT, além dos trabalhos relacionados. O Capítulo~\ref{cap:metodologia} descreve a classificação da pesquisa e os procedimentos de coleta e de análise. O Capítulo~\ref{cap:desenvolvimento} documenta o ambiente experimental: rede de teste, equipamentos, condições de execução, fluxograma e cadeia de processamento dos dados. O Capítulo~\ref{cap:analise_resultados} apresenta e discute os resultados, incluindo a segurança negociada por dispositivo e um cenário de aplicação analítico. O Capítulo~\ref{cap:conclusao} retoma o problema, o atendimento aos objetivos, as limitações e os trabalhos futuros. Por fim, os Apêndices~\ref{sec:evidencias-rsn}, \ref{sec:registro-execucoes} e~\ref{sec:protocolo} reúnem, respectivamente, as evidências da segurança negociada nas capturas, o registro dos ensaios por execução e o protocolo de execução dos ensaios.

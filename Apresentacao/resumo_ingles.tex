@@ -1,0 +1,13 @@
+% ---
+% RESUMO INGLÊS
+% ---
+\begin{resumo}[ABSTRACT]
+ \begin{otherlanguage*}{english}
+\noindent The spread of Internet of Things devices connected over wireless networks exposes them to legacy vulnerabilities of the IEEE 802.11 family, among them the forgery of management frames when the protection defined in amendment 802.11w is not negotiated. This work investigates how low-cost microcontrollers can be used to test this vulnerability in an environment with connected devices, aiming to analyze and demonstrate it in a controlled laboratory. It is applied, exploratory and descriptive research, conducted as an experimental case study and restricted to the deauthentication attack. The testbed comprised a home router, an attack platform based on a microcontroller, a camera, a smart bulb, a smart plug and a reference smartphone, evaluated under two access point configurations: without management frame protection and in mixed mode, with optional protection. The trials were recorded by frame capture and connectivity measurements, and the security negotiated by each device was verified in the association frames. Without protection, the camera, the plug, the bulb and the smartphone showed substantial connectivity interruptions, with distinct recoveries among them. In mixed mode, the camera and the plug negotiated access without protection and lost connectivity again, while the bulb, which negotiated mandatory protection, showed no interruptions. It is concluded that the microcontroller was sufficient to test the vulnerability and that the observed pattern is consistent with the expected protection of management frames. The small number of repetitions and the absence of a WPA2 condition with management frame protection prevent attributing the effect exclusively to this mechanism. The results concern device availability and involve neither breaking encryption nor obtaining credentials.
+
+  \vspace{\onelineskip}
+
+   \noindent
+   \textbf{Keywords}: IEEE 802.11. Deauthentication. Internet of Things. Management frame protection. ESP32-S3.
+ \end{otherlanguage*}
+\end{resumo}

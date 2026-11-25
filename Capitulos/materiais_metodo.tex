@@ -1,0 +1,181 @@
+% !TeX encoding = UTF-8
+\chapter{Metodologia}
+\label{cap:metodologia}
+
+Este capítulo apresenta os procedimentos metodológicos adotados na pesquisa intitulada ``Vulnerabilidades do IEEE 802.11 em ambientes IoT: estudo de caso utilizando microcontroladores de baixo custo''. São descritas a abordagem, a tipologia, os instrumentos de coleta, o cenário empírico e as técnicas de análise efetivamente empregados.
+
+Trata-se de uma pesquisa aplicada, de abordagem mista (quantitativa e qualitativa), com objetivos exploratórios e descritivos, conduzida como estudo de caso experimental em ambiente laboratorial controlado de rede IEEE 802.11 com dispositivos IoT. A classificação apoia-se nas noções de pesquisa aplicada, exploratória, descritiva, experimental, bibliográfica e documental apresentadas por \citeonline{ProdanovFreitas2013} e \citeonline{Gil2002}.
+
+% ----------------------------------------------------------
+% 3.1 Tipo de Pesquisa
+% ----------------------------------------------------------
+\section{Tipo de pesquisa}
+
+\subsection{Natureza da pesquisa}
+
+A pesquisa é aplicada porque produz conhecimento voltado a um problema prático de segurança de redes sem fio: verificar, em laboratório, como dispositivos IoT selecionados reagem a ataques de desautenticação gerados por um microcontrolador de baixo custo. É exploratória porque examina a interação entre o padrão IEEE 802.11, a segurança negociada (WPA2, WPA3 e PMF) e o comportamento desses dispositivos em um ambiente específico; e é descritiva porque registra de forma sistemática a configuração do ambiente, as características dos dispositivos, os eventos de perda e retomada de conectividade e as métricas observadas, sem pretender construir modelos causais generalizáveis.
+
+Quanto ao recorte temporal, a pesquisa é transversal: os dados foram coletados em um período delimitado, com um ensaio piloto em 3 de novembro de 2026, o conjunto completo de ensaios em 8 de novembro de 2026 e, em 17 de novembro de 2026, seis capturas da câmera em WPA2 (\texttt{R03} e \texttt{R04}, válidas com \textit{ping}; \texttt{R05} e \texttt{R06}, invalidadas; \texttt{R07}, teste de bancada; \texttt{R08}, descritiva; Apêndice~\ref{sec:registro-execucoes}), sem acompanhamento longitudinal dos equipamentos \cite{ProdanovFreitas2013,Gil2002}.
+
+A Figura~\ref{fig:classificacao_pesquisa} sintetiza a classificação metodológica adotada, relacionando a natureza, os objetivos, a abordagem, o procedimento técnico e o recorte temporal da pesquisa.
+
+\begin{figure}[htb]
+\centering
+\caption{Classificação metodológica da pesquisa}
+\label{fig:classificacao_pesquisa}
+\resizebox{\textwidth}{!}{%
+\begin{tikzpicture}[font=\small, >=Stealth,
+  c/.style={draw, rounded corners, minimum width=30mm, minimum height=16mm, align=center}]
+\node[c, fill=blue!12, minimum height=10mm, minimum width=42mm] (root) at (0,2) {Classificação da pesquisa};
+\node[c, fill=orange!14] (nat) at (-6.2,-0.4) {\textbf{Natureza}\\Aplicada};
+\node[c, fill=orange!14] (obj) at (-3.1,-0.4) {\textbf{Objetivos}\\Exploratória e\\descritiva};
+\node[c, fill=green!14] (abo) at (0,-0.4) {\textbf{Abordagem}\\Mista\\(quanti.\,+\,quali.)};
+\node[c, fill=blue!10] (pro) at (3.1,-0.4) {\textbf{Procedimento}\\Estudo de caso\\experimental};
+\node[c, fill=gray!14] (tmp) at (6.2,-0.4) {\textbf{Recorte}\\Transversal};
+\draw[->] (root) -- (nat);
+\draw[->] (root) -- (obj);
+\draw[->] (root) -- (abo);
+\draw[->] (root) -- (pro);
+\draw[->] (root) -- (tmp);
+\end{tikzpicture}}
+\legend{Fonte: elaborado pelo autor com base em Prodanov e Freitas (2013) e Gil (2002).}
+\end{figure}
+
+\subsection{Declaração de uso de inteligência artificial generativa}
+\label{subsec:declaracao_ia}
+
+Como o Centro Universitário Dinâmica das Cataratas (UDC) não dispõe de norma institucional específica sobre o tema, toma-se como referência o art.~9º, inciso~I, alíneas~c, d e~f, da Portaria nº 2.664 do Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq), de 6 de março de 2026 (CNPq, \citeyear{CNPqPortaria2664}), que orienta declarar a ferramenta de inteligência artificial generativa utilizada e a sua finalidade, em qualquer fase da pesquisa, e atribui aos autores a responsabilidade integral pelo conteúdo final, declara-se o emprego das seguintes ferramentas de inteligência artificial generativa neste trabalho, utilizadas como apoio e sob revisão e validação integral do autor:
+
+\begin{itemize}
+    \item \textbf{Perplexity (plano Pro) e GPT-5.4 (OpenAI), utilizados no segundo semestre de 2026:} organização de ideias, apoio à estruturação do texto, revisão linguística e esclarecimento conceitual a partir de referências selecionadas pelo autor;
+    \item \textbf{Claude (Anthropic, plano Claude Pro), com os modelos Claude Opus 5.5 e Claude Opus 4.8 no Claude Code (extensão do VS Code) e Claude Opus 5.5 no aplicativo \textit{desktop}, utilizado no segundo semestre de 2026:} revisão técnica e linguística do texto; redação de versões de seções a partir das instruções e dos dados fornecidos pelo autor, incluindo a reescrita dos capítulos de referencial, metodologia, desenvolvimento e resultados, a conclusão e o resumo; apoio à extração automatizada de campos dos arquivos de captura com o \textit{tshark} (contagens de quadros e campos do elemento RSN); elaboração dos \textit{scripts} de cálculo das métricas de \textit{ping} (\texttt{src/analisa\_ping.py}) e de geração das Figuras~\ref{fig:comparacao_pmf} e~\ref{fig:ping_lampada} (\texttt{src/figura\_comparacao\_pmf.py} e \texttt{src/figura\_ping\_lampada.py}), revisados e executados pelo autor; e conferência de metadados das referências.
+\end{itemize}
+
+Nenhum dado experimental foi gerado pelas ferramentas: todos os valores apresentados provêm dos arquivos de captura e dos \textit{logs} de \textit{ping} produzidos pelo autor nos ensaios, e nenhum valor foi estimado. O autor revisou todo o conteúdo produzido com apoio das ferramentas, conferiu as referências e assume integral responsabilidade pela originalidade, pela precisão das informações e pelas conclusões apresentadas.
+
+Os \textit{scripts} de análise (\texttt{src/analisa\_ping.py}, \texttt{src/figura\_comparacao\_pmf.py} e \texttt{src/figura\_ping\_lampada.py}), o \textit{script} de coleta, os \textit{logs} de \textit{ping} e versões filtradas dos arquivos de captura estão disponíveis no repositório público indicado ao final deste trabalho, depois dos apêndices. As versões filtradas mantêm apenas os quadros da rede de laboratório, sem os quadros do \textit{handshake} de autenticação e sem os quadros de redes vizinhas, e preservam todos os quadros usados nas análises. Os arquivos de captura originais foram entregues ao orientador em mídia digital junto com a versão final deste trabalho.
+
+\subsection{Abordagem metodológica}
+
+Segundo \citeonline{ProdanovFreitas2013}, abordagens quantitativas fundamentam-se na mensuração de variáveis, enquanto abordagens qualitativas buscam compreender significados e relações presentes nos fenômenos estudados; a abordagem mista combina, de forma planejada, os dois tipos de procedimento.
+
+Neste estudo, a abordagem foi mista, com predominância quantitativa. A dimensão quantitativa compreendeu métricas extraídas das capturas e dos registros de conectividade: número de quadros de desautenticação direcionados a cada dispositivo, tempo acumulado sem resposta a \textit{ping}, maior intervalo contínuo sem resposta e ocorrência de novas autenticações e associações. Essas métricas foram comparadas entre dispositivos e entre as duas configurações de segurança do ponto de acesso (WPA2 e modo misto WPA2/WPA3).
+
+A dimensão qualitativa compreendeu a interpretação técnica dos eventos: a forma como o ataque se manifestou nos quadros de gerenciamento, a segurança negociada por cada dispositivo (elemento RSN dos quadros de associação), o modo de recuperação de cada equipamento (automática, intermitente ou dependente de intervenção manual) e as limitações da plataforma de baixo custo.
+
+\subsection{Procedimentos técnicos}
+
+A pesquisa foi operacionalizada como estudo de caso experimental em uma bancada que reproduz, em pequena escala, uma rede doméstica com dispositivos IoT. O conjunto de equipamentos foi composto por roteador TP\mbox{-}Link EX1500, plataforma LILYGO T\mbox{-}Embed CC1101 Plus (baseada em ESP32\mbox{-}S3, \textit{firmware} Bruce 1.16.1), câmera IP, lâmpada inteligente, tomada inteligente e \textit{smartphone} Android, cuja descrição completa consta da Seção~\ref{sec:inventario}.
+
+% ----------------------------------------------------------
+% 3.2 Procedimentos Metodológicos
+% ----------------------------------------------------------
+\section{Procedimentos metodológicos}
+
+O cenário empírico foi uma rede Wi-Fi própria, criada exclusivamente para a pesquisa (TCC\_LAB, 2,4~GHz, canal 6), centrada no roteador TP\mbox{-}Link EX1500, que atuou como ponto de acesso nas duas configurações de segurança avaliadas. O ataque foi gerado pelo LILYGO T\mbox{-}Embed CC1101 Plus, e a captura de quadros IEEE~802.11 foi feita por um adaptador Wi-Fi \textit{Universal Serial Bus} (USB) em modo monitor, conectado a uma máquina virtual com Kali Linux. Os dispositivos avaliados foram uma câmera IP, uma lâmpada inteligente, uma tomada inteligente e um \textit{smartphone} Android de referência.
+
+Do ponto de vista ético e de proteção de dados, todos os testes foram
+realizados exclusivamente na rede própria, sem utilização de redes de
+terceiros e sem coleta de dados pessoais. Não foram armazenadas
+informações sensíveis, como credenciais reais, conteúdos privados de
+comunicação ou dados que permitam a identificação de pessoas físicas;
+a análise limitou-se a quadros de controle e gerenciamento e a registros
+de conectividade em ambiente controlado, em conformidade com os princípios
+da Lei Geral de Proteção de Dados (Lei nº 13.709/2018).
+
+Os sujeitos de pesquisa foram os próprios dispositivos e elementos de infraestrutura do ambiente experimental, sem participação de seres humanos. A amostra foi não probabilística e intencional, definida por conveniência a partir dos equipamentos disponíveis.
+
+\subsection{Métodos de coleta de informações}
+
+Foram utilizados instrumentos bibliográficos, documentais e empíricos. A pesquisa bibliográfica reuniu o conhecimento sobre segurança em redes IEEE 802.11, vulnerabilidades em tramas de gerenciamento, ataques de desautenticação, uso de microcontroladores da família ESP em testes de segurança e riscos em ambientes IoT. A pesquisa documental abrangeu manuais e documentações técnicas dos equipamentos e ferramentas, como o \textit{datasheet} do ESP32-S3, a documentação de segurança Wi-Fi da Espressif e a documentação de PMF da Cisco.
+
+No plano empírico, cada ensaio produziu dois registros gerados simultaneamente na estação de captura: um arquivo de captura de quadros IEEE~802.11 em modo monitor (gravado pelo Wireshark/\textit{dumpcap} no ensaio piloto e pelo \textit{tcpdump}, acionado por um \textit{script} auxiliar, nos demais ensaios) e um registro de conectividade por \textit{ping} com marcas de tempo. Complementarmente, o comportamento visível dos dispositivos (imagem da câmera, estado no aplicativo, mensagens do \textit{smartphone}) foi observado diretamente. Registros gerados pelo \textit{firmware} Bruce não foram utilizados na análise. A cadeia completa de processamento desses dados é descrita na Seção~\ref{sec:dados_captura}.
+
+O encadeamento entre os instrumentos de coleta e a etapa de análise é apresentado na Figura~\ref{fig:fluxo_instrumentos}. A pesquisa bibliográfica e a documental fundamentaram a coleta empírica em laboratório, cujos registros alimentaram a análise mista (quantitativa descritiva e qualitativa de conteúdo).
+
+\begin{figure}[htb]
+\centering
+\caption{Instrumentos de coleta e etapa de análise da pesquisa}
+\label{fig:fluxo_instrumentos}
+\resizebox{\textwidth}{!}{%
+\begin{tikzpicture}[font=\small, >=Stealth,
+  p/.style={draw, rounded corners, minimum width=34mm, minimum height=16mm, align=center}]
+\node[p, fill=blue!8] (bib) {Pesquisa\\bibliográfica};
+\node[p, fill=blue!8, right=8mm of bib] (doc) {Pesquisa\\documental};
+\node[p, fill=green!12, right=8mm of doc] (emp) {Coleta empírica\\(captura, \textit{ping},\\observação)};
+\node[p, fill=orange!16, right=8mm of emp] (ana) {Análise mista\\(quant. descritiva +\\análise de conteúdo)};
+\draw[->] (bib) -- (doc);
+\draw[->] (doc) -- (emp);
+\draw[->] (emp) -- (ana);
+\end{tikzpicture}}
+\legend{Fonte: elaborado pelo autor com base em Prodanov e Freitas (2013).}
+\end{figure}
+
+\subsection{Métodos de análise das informações}
+
+Na vertente quantitativa, os arquivos de captura foram analisados com o Wireshark, para inspeção visual, e com o \textit{tshark}, para a extração reprodutível de contagens, instantes e campos dos quadros; os \textit{logs} de \textit{ping} foram processados separadamente, e deles derivaram os indicadores de conectividade. Os resultados foram organizados em tabelas por dispositivo e por configuração de segurança, com média e amplitude quando havia mais de uma execução e com o valor observado quando havia uma única execução.
+
+Estava prevista a repetição de cada combinação de dispositivo e configuração em pelo menos três execuções independentes. Esse número foi atingido no cenário WPA2 para a tomada, a lâmpada e o \textit{smartphone}; a câmera, que exigia reinício manual a cada ensaio, teve duas execuções válidas com \textit{ping} em WPA2 (\texttt{CAM\_WPA2\_R03} e \texttt{CAM\_WPA2\_R04}), além do ensaio piloto, sem \textit{ping}; no modo misto, foi realizada uma execução para a tomada e para a lâmpada e duas para a câmera e para o \textit{smartphone} (neste, de três capturas, uma foi invalidada). Em vez de uma classificação binária entre ataque ``bem-sucedido'' e ``não bem-sucedido'', cada execução foi enquadrada em um de quatro resultados, definidos a partir das evidências efetivamente disponíveis. Essa graduação evita atribuir ao ataque um efeito que as evidências não sustentam, já que a falha de respostas a \textit{ping}, isoladamente, não comprova que o dispositivo foi desassociado do ponto de acesso:
+
+\begin{enumerate}
+    \item \textbf{Perda de conectividade observada:} durante ou logo após a janela de ataque, o \textit{log} de \textit{ping} registra ao menos um intervalo sem resposta superior ao limiar definido, e a captura contém quadros de desautenticação direcionados ao dispositivo (ou em difusão) na mesma janela. Esse resultado não afirma, por si só, que houve desassociação.
+    \item \textbf{Desassociação confirmada:} além da perda de conectividade, a captura mostra evidência de troca de estado na camada de enlace, como a interrupção do tráfego de dados do dispositivo seguida de quadros de autenticação/associação (reassociação) ou o anúncio, no painel do roteador, da saída do cliente.
+    \item \textbf{Sem efeito detectado:} há quadros de desautenticação direcionados ao dispositivo na janela de ataque, mas o \textit{log} de \textit{ping} não registra intervalo sem resposta acima do limiar, e o tráfego do dispositivo segue presente na captura.
+    \item \textbf{Inconclusivo:} faltam evidências para enquadrar a execução nos casos anteriores, por exemplo, ausência de quadros de desautenticação direcionados ao alvo na janela, \textit{log} de \textit{ping} incompleto ou corrompido, ou falhas de conectividade que não coincidem temporalmente com o ataque.
+\end{enumerate}
+
+O tempo entre a queda e o restabelecimento foi registrado sempre que observado, mas não é condição para a classificação: quando o dispositivo não se recuperou até o fim da janela de observação, o tempo é registrado como limite inferior (``pelo menos $X$~s, recuperação espontânea não observada''). Todas as execuções analisadas, inclusive as sem efeito ou inconclusivas, foram mantidas nos registros. A Figura~\ref{fig:criterios_sucesso} representa a sequência de decisão que leva a cada um desses quatro resultados.
+
+\begin{figure}[htb]
+\centering
+\caption{Classificação do resultado de cada execução do ataque}
+\label{fig:criterios_sucesso}
+\resizebox{\textwidth}{!}{%
+\begin{tikzpicture}[font=\small, >=Stealth,
+  q/.style={draw, rounded corners, fill=blue!8, minimum width=46mm, minimum height=13mm, align=center},
+  r/.style={draw, rounded corners, minimum width=40mm, minimum height=12mm, align=center, font=\bfseries}]
+\node[q] (q1) at (0,3) {Deauth direcionado ao alvo\\na janela e evidência íntegra?};
+\node[q] (q2) at (0,0.6) {\textit{Ping} sem resposta acima\\do limiar na janela?};
+\node[q] (q3) at (0,-1.8) {Troca de estado de enlace\\(reassociação/cliente removido)?};
+\node[r, fill=gray!18] (inc) at (7.5,3) {Inconclusivo};
+\node[r, fill=green!15] (sem) at (7.5,0.6) {Sem efeito detectado};
+\node[r, fill=orange!18] (perda) at (7.5,-1.8) {Perda de conectividade\\observada};
+\node[r, fill=red!15] (des) at (0,-4.2) {Desassociação confirmada};
+\draw[->] (q1) -- node[above] {não} (inc);
+\draw[->] (q1) -- node[right] {sim} (q2);
+\draw[->] (q2) -- node[above] {não} (sem);
+\draw[->] (q2) -- node[right] {sim} (q3);
+\draw[->] (q3) -- node[above] {não} (perda);
+\draw[->] (q3) -- node[right] {sim} (des);
+\end{tikzpicture}}
+\legend{Fonte: elaborado pelo autor (2026).}
+\end{figure}
+
+O monitoramento por \textit{ping} foi feito a partir da estação de captura, diretamente para o endereço IP do dispositivo avaliado, com intervalo de 0,5~s (1~s na primeira execução da tomada em WPA2) e marcas de tempo absolutas em cada resposta. Na vertente qualitativa, empregou-se análise de conteúdo sobre trechos das capturas e sobre o comportamento observado dos dispositivos, para compreender como o ataque se manifestou nas mensagens de protocolo e na função de cada equipamento.
+
+% ----------------------------------------------------------
+% Quadro-síntese do delineamento metodológico
+% ----------------------------------------------------------
+\section{Quadro-síntese do delineamento metodológico}
+
+O Quadro~\ref{quad:delineamento-metodologico} sintetiza, para cada objetivo, as fontes de dados e as técnicas de coleta e análise efetivamente empregadas.
+
+\begin{quadro}[!htbp]
+    \centering
+    \caption{Delineamento metodológico por objetivo}
+    \label{quad:delineamento-metodologico}
+    \small
+    \renewcommand{\arraystretch}{1.15}
+    \begin{tabular}{|p{0.27\textwidth}|p{0.31\textwidth}|p{0.33\textwidth}|}
+        \hline
+        \textbf{Objetivo} & \textbf{Fonte dos dados} & \textbf{Coleta e análise} \\ \hline
+        Geral: analisar e demonstrar as vulnerabilidades do IEEE~802.11 em dispositivos IoT com microcontrolador de baixo custo & Bancada de laboratório (Seção~\ref{sec:inventario}) & Experimento controlado; estatística descritiva e análise de conteúdo \\ \hline
+        1. Configurar o ambiente de ataque & Painel do roteador; \textit{firmware} Bruce; documentação técnica & Pesquisa documental; verificação funcional (ensaio piloto) \\ \hline
+        2. Executar testes de desautenticação & Capturas \texttt{.pcapng} em modo monitor & Contagem de quadros de desautenticação por dispositivo (\textit{tshark}) \\ \hline
+        3. Mensurar indisponibilidade e reconexão & \textit{Logs} de \textit{ping} com marcas de tempo; capturas & Tempo acumulado sem resposta e maior queda contínua; média e amplitude \\ \hline
+        4. Analisar o tráfego e documentar as falhas & Quadros de autenticação, associação e desautenticação & Inspeção do elemento RSN (AKM, MFPC/MFPR); comparação com o referencial \\ \hline
+    \end{tabular}
+    \legend{Fonte: elaborado pelo autor (2026).}
+\end{quadro}
+
+O Quadro~\ref{quad:delineamento-metodologico} mostra que os objetivos 2 a 4 se apoiam nas mesmas duas fontes empíricas, as capturas e os \textit{logs} de \textit{ping}, analisadas por técnicas diferentes: contagem de quadros, medição de intervalos sem resposta e inspeção dos campos de segurança. A descrição detalhada dessas fontes e de como foram processadas consta do Capítulo~\ref{cap:desenvolvimento}.

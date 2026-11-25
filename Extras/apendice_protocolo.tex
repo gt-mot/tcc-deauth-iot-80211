@@ -1,0 +1,50 @@
+% !TeX root = ../main.tex
+% !TeX encoding = UTF-8
+% ============================================================================
+% APÊNDICE C — Protocolo experimental.
+% Descreve o procedimento efetivamente seguido. \PREENCHER = parâmetro não registrado.
+% ============================================================================
+
+\chapter{Protocolo de execução dos ensaios}
+\label{sec:protocolo}
+
+Este apêndice descreve, passo a passo, o protocolo seguido em cada ensaio de desautenticação, de modo que o procedimento possa ser repetido. Ele detalha o fluxo apresentado em forma de diagrama na Seção~\ref{sec:atividades_experimento} e complementa a Seção~\ref{sec:condicoes_experimentais}, que registra as condições de execução.
+
+\section{Preparação da bancada}
+
+\begin{enumerate}
+    \item Configurar no roteador TP-Link EX1500 a rede TCC\_LAB em 2,4~GHz, canal 6, largura de 20~MHz, e desabilitar a direção de banda (\textit{band steering}).
+    \item Selecionar a configuração de segurança do cenário: WPA2-PSK[AES] ou WPA2-PSK[AES]+WPA3-\textit{Personal}.
+    \item Associar à rede a câmera IP, a lâmpada, a tomada e o \textit{smartphone}, e anotar o endereço IP e o endereço MAC de cada um.
+    \item Conectar o adaptador AR9271 à máquina virtual Kali Linux e colocá-lo em modo monitor no canal 6.
+    \item Posicionar os equipamentos sobre a mesma bancada, próximos entre si; a distância não foi medida nem controlada como variável do ensaio.
+\end{enumerate}
+
+\section{Execução de cada ensaio}
+
+\begin{enumerate}
+    \item Confirmar que o dispositivo avaliado responde a \textit{ping}.
+    \item Iniciar o \textit{script} auxiliar na Kali com o nome do ensaio (\texttt{DISPOSITIVO\_CENÁRIO\_Rnn}), o IP do dispositivo e o canal 6. O \textit{script} inicia, ao mesmo tempo, o \textit{tcpdump} na interface em modo monitor e o \textit{ping} ao dispositivo com intervalo de 0,5~s e marcas de tempo absolutas.
+    \item Aguardar a janela de referência, sem ataque, com respostas normais ao \textit{ping} (linha de base). Duração planejada: 20 a 30~s; nas execuções válidas, de cerca de 8,5~s a 105~s. A execução só é considerada válida se houver linha de base antes do primeiro quadro de desautenticação direcionado ao dispositivo.
+    \item No T-Embed CC1101 Plus, abrir o menu Wi-Fi do Bruce 1.16.1, selecionar a rede TCC\_LAB e o dispositivo avaliado e iniciar a desautenticação.
+    \item Manter o ataque. Duração planejada: 20 a 30~s; na prática, o ataque foi encerrado manualmente e durou de cerca de 18~s a 120~s (Tabela~\ref{tab:registro-execucoes}).
+    \item Encerrar o ataque e observar a recuperação durante a janela pós-ataque, planejada para 20 a 30~s. Registrar o comportamento visível do dispositivo (imagem da câmera, estado no aplicativo, mensagens do \textit{smartphone}).
+    \item Encerrar o \textit{script}, que finaliza a captura e o \textit{ping} e grava os arquivos \texttt{.pcapng} e \texttt{\_ping.txt}.
+\end{enumerate}
+
+\section{Restabelecimento entre repetições}
+
+\begin{enumerate}
+    \item Câmera: desligar e religar o equipamento e aguardar o retorno das respostas a \textit{ping}, pois ela não voltou a responder sem reinício após o encerramento do ataque. Na repetição \texttt{CAM\_WPA2\_R03}, o reinício foi feito depois do encerramento da captura; na \texttt{CAM\_WPA2\_R04}, com a captura em andamento, para registrar o tempo de retorno (Tabelas~\ref{tab:registro-execucoes} e~\ref{tab:registro-metricas}).
+    \item Demais dispositivos: aguardar a retomada das respostas a \textit{ping} por 5 a 10~s antes da repetição seguinte.
+    \item \textit{Smartphone} no cenário WPA2: selecionar novamente a rede TCC\_LAB, pois ele exibiu mensagem de senha incorreta e não reconectou sozinho.
+\end{enumerate}
+
+\section{Encerramento e análise}
+
+\begin{enumerate}
+    \item Transferir os arquivos da máquina virtual para o computador hospedeiro.
+    \item Com o \textit{tshark}, contar os quadros de desautenticação com o endereço do dispositivo como origem ou destino, identificar autenticações e associações e extrair os campos RSN (AKM, MFPC e MFPR) de \textit{beacons} e \textit{Association Requests}.
+    \item Com o \textit{script} de análise dos \textit{logs} de \textit{ping}, calcular o tempo acumulado sem resposta (intervalos superiores a 2~s), a fração desse tempo sobre a duração do \textit{log} e a maior queda contínua.
+    \item Registrar os valores nas Tabelas~\ref{tab:registro-execucoes} e~\ref{tab:registro-metricas} (Apêndice~\ref{sec:registro-execucoes}) e as evidências de segurança negociada no Apêndice~\ref{sec:evidencias-rsn}.
+\end{enumerate}

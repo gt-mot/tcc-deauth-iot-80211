@@ -1,0 +1,24 @@
+% ---
+% REPOSITÓRIO DO TRABALHO (após os apêndices)
+% ---
+\chapter*{REPOSITÓRIO DO TRABALHO}
+\addcontentsline{toc}{chapter}{REPOSITÓRIO DO TRABALHO}
+\label{cap:repositorio}
+
+Os dados, o código e o texto-fonte deste trabalho estão disponíveis no repositório público:
+
+\begin{center}
+\url{https://github.com/gt-mot/tcc-deauth-iot-80211}
+\end{center}
+
+O repositório contém:
+
+\begin{itemize}
+    \item o texto deste trabalho em PDF e o seu código-fonte em \LaTeX{};
+    \item os \textit{logs} de \textit{ping} de todas as execuções, identificados pelos mesmos nomes usados no Apêndice~\ref{sec:registro-execucoes};
+    \item as capturas de tráfego em versão filtrada, com apenas os quadros da rede de laboratório, sem os quadros do \textit{handshake} de autenticação e sem os quadros de redes vizinhas, acompanhadas de uma tabela que relaciona cada quadro filtrado ao número do quadro na captura original, usado no Apêndice~\ref{sec:evidencias-rsn};
+    \item os \textit{scripts} de análise (\texttt{src/analisa\_ping.py}, \texttt{src/figura\_comparacao\_pmf.py} e \texttt{src/figura\_ping\_lampada.py}) e o \textit{script} de coleta usado na estação de captura (\texttt{tcc\_cap.sh});
+    \item as instruções para refazer as métricas, as Figuras~\ref{fig:comparacao_pmf} e~\ref{fig:ping_lampada} e as contagens de quadros de desautenticação com o \textit{tshark}.
+\end{itemize}
+
+As versões filtradas preservam todos os quadros de desautenticação, de associação e de dados da rede de laboratório, de modo que os valores apresentados no Capítulo~\ref{cap:analise_resultados} podem ser conferidos a partir delas. Os arquivos de captura originais foram entregues ao orientador em mídia digital.

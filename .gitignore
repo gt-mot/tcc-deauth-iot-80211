@@ -1,0 +1,20 @@
+# Arquivos gerados pelo LaTeX
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.lot
+*.loqd
+*.log
+*.out
+*.toc
+*.synctex.gz
+
+# Python
+__pycache__/
+*.pyc
+
+# Figuras geradas para conferência
+saida_*.png

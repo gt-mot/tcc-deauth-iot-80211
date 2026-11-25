@@ -1,0 +1,1343 @@
+PING 192.168.0.5 (192.168.0.5) 56(84) bytes of data.
+[1794165102.471016] 64 bytes from 192.168.0.5: icmp_seq=1 ttl=255 time=6.71 ms
+[1794165102.988539] 64 bytes from 192.168.0.5: icmp_seq=2 ttl=255 time=4.71 ms
+[1794165103.489637] 64 bytes from 192.168.0.5: icmp_seq=3 ttl=255 time=5.92 ms
+[1794165103.989395] 64 bytes from 192.168.0.5: icmp_seq=4 ttl=255 time=4.23 ms
+[1794165104.498891] 64 bytes from 192.168.0.5: icmp_seq=5 ttl=255 time=8.00 ms
+[1794165104.995141] 64 bytes from 192.168.0.5: icmp_seq=6 ttl=255 time=5.12 ms
+[1794165105.500360] 64 bytes from 192.168.0.5: icmp_seq=7 ttl=255 time=5.76 ms
+[1794165105.999790] 64 bytes from 192.168.0.5: icmp_seq=8 ttl=255 time=4.53 ms
+[1794165106.503483] 64 bytes from 192.168.0.5: icmp_seq=9 ttl=255 time=6.55 ms
+[1794165107.003765] 64 bytes from 192.168.0.5: icmp_seq=10 ttl=255 time=5.33 ms
+[1794165107.508312] 64 bytes from 192.168.0.5: icmp_seq=11 ttl=255 time=8.54 ms
+[1794165108.005010] 64 bytes from 192.168.0.5: icmp_seq=12 ttl=255 time=4.10 ms
+[1794165108.510386] 64 bytes from 192.168.0.5: icmp_seq=13 ttl=255 time=5.81 ms
+[1794165109.020527] 64 bytes from 192.168.0.5: icmp_seq=14 ttl=255 time=4.56 ms
+[1794165109.667409] 64 bytes from 192.168.0.5: icmp_seq=15 ttl=255 time=8.56 ms
+[1794165110.164723] 64 bytes from 192.168.0.5: icmp_seq=16 ttl=255 time=4.78 ms
+[1794165110.669664] 64 bytes from 192.168.0.5: icmp_seq=17 ttl=255 time=7.65 ms
+[1794165111.170039] 64 bytes from 192.168.0.5: icmp_seq=18 ttl=255 time=4.36 ms
+[1794165111.681375] 64 bytes from 192.168.0.5: icmp_seq=19 ttl=255 time=6.74 ms
+[1794165112.205911] 64 bytes from 192.168.0.5: icmp_seq=20 ttl=255 time=4.38 ms
+[1794165112.753980] 64 bytes from 192.168.0.5: icmp_seq=21 ttl=255 time=6.08 ms
+[1794165113.252901] 64 bytes from 192.168.0.5: icmp_seq=22 ttl=255 time=4.22 ms
+[1794165113.761404] 64 bytes from 192.168.0.5: icmp_seq=23 ttl=255 time=8.77 ms
+[1794165114.257727] 64 bytes from 192.168.0.5: icmp_seq=24 ttl=255 time=4.25 ms
+[1794165114.762157] 64 bytes from 192.168.0.5: icmp_seq=25 ttl=255 time=6.23 ms
+[1794165115.262070] 64 bytes from 192.168.0.5: icmp_seq=26 ttl=255 time=4.28 ms
+[1794165115.768378] 64 bytes from 192.168.0.5: icmp_seq=27 ttl=255 time=7.89 ms
+[1794165116.270208] 64 bytes from 192.168.0.5: icmp_seq=28 ttl=255 time=6.27 ms
+[1794165116.791687] 64 bytes from 192.168.0.5: icmp_seq=29 ttl=255 time=8.79 ms
+[1794165117.398380] 64 bytes from 192.168.0.5: icmp_seq=30 ttl=255 time=11.3 ms
+[1794165117.894890] 64 bytes from 192.168.0.5: icmp_seq=31 ttl=255 time=6.30 ms
+[1794165118.410862] 64 bytes from 192.168.0.5: icmp_seq=32 ttl=255 time=5.85 ms
+[1794165118.911988] 64 bytes from 192.168.0.5: icmp_seq=33 ttl=255 time=5.18 ms
+[1794165119.415112] 64 bytes from 192.168.0.5: icmp_seq=34 ttl=255 time=7.66 ms
+[1794165119.918740] 64 bytes from 192.168.0.5: icmp_seq=35 ttl=255 time=4.77 ms
+[1794165120.430403] 64 bytes from 192.168.0.5: icmp_seq=36 ttl=255 time=5.76 ms
+[1794165120.931234] 64 bytes from 192.168.0.5: icmp_seq=37 ttl=255 time=4.50 ms
+[1794165121.442732] 64 bytes from 192.168.0.5: icmp_seq=38 ttl=255 time=6.43 ms
+[1794165122.471829] 64 bytes from 192.168.0.5: icmp_seq=40 ttl=255 time=6.40 ms
+[1794165122.971496] 64 bytes from 192.168.0.5: icmp_seq=41 ttl=255 time=4.82 ms
+[1794165123.503037] 64 bytes from 192.168.0.5: icmp_seq=42 ttl=255 time=33.7 ms
+[1794165123.975936] 64 bytes from 192.168.0.5: icmp_seq=43 ttl=255 time=4.41 ms
+[1794165124.483689] 64 bytes from 192.168.0.5: icmp_seq=44 ttl=255 time=7.97 ms
+[1794165124.982710] 64 bytes from 192.168.0.5: icmp_seq=45 ttl=255 time=4.76 ms
+[1794165125.485341] 64 bytes from 192.168.0.5: icmp_seq=46 ttl=255 time=6.11 ms
+[1794165125.985977] 64 bytes from 192.168.0.5: icmp_seq=47 ttl=255 time=5.24 ms
+[1794165126.489915] 64 bytes from 192.168.0.5: icmp_seq=48 ttl=255 time=7.31 ms
+[1794165126.993400] 64 bytes from 192.168.0.5: icmp_seq=49 ttl=255 time=5.96 ms
+[1794165127.540106] 64 bytes from 192.168.0.5: icmp_seq=50 ttl=255 time=8.87 ms
+[1794165128.039243] 64 bytes from 192.168.0.5: icmp_seq=51 ttl=255 time=5.28 ms
+[1794165128.949753] 64 bytes from 192.168.0.5: icmp_seq=52 ttl=255 time=12.0 ms
+[1794165129.443442] 64 bytes from 192.168.0.5: icmp_seq=53 ttl=255 time=5.97 ms
+[1794165129.946639] 64 bytes from 192.168.0.5: icmp_seq=54 ttl=255 time=5.03 ms
+[1794165130.460412] 64 bytes from 192.168.0.5: icmp_seq=55 ttl=255 time=8.68 ms
+[1794165130.958019] 64 bytes from 192.168.0.5: icmp_seq=56 ttl=255 time=4.91 ms
+[1794165131.471591] 64 bytes from 192.168.0.5: icmp_seq=57 ttl=255 time=11.5 ms
+[1794165131.963774] 64 bytes from 192.168.0.5: icmp_seq=58 ttl=255 time=6.79 ms
+[1794165132.472298] 64 bytes from 192.168.0.5: icmp_seq=59 ttl=255 time=9.80 ms
+[1794165132.966988] 64 bytes from 192.168.0.5: icmp_seq=60 ttl=255 time=5.39 ms
+[1794165133.471998] 64 bytes from 192.168.0.5: icmp_seq=61 ttl=255 time=9.46 ms
+[1794165133.968171] 64 bytes from 192.168.0.5: icmp_seq=62 ttl=255 time=4.58 ms
+[1794165134.542214] 64 bytes from 192.168.0.5: icmp_seq=63 ttl=255 time=13.9 ms
+[1794165135.063420] 64 bytes from 192.168.0.5: icmp_seq=64 ttl=255 time=32.9 ms
+[1794165135.540026] 64 bytes from 192.168.0.5: icmp_seq=65 ttl=255 time=8.39 ms
+[1794165136.046833] 64 bytes from 192.168.0.5: icmp_seq=66 ttl=255 time=6.67 ms
+[1794165136.550845] 64 bytes from 192.168.0.5: icmp_seq=67 ttl=255 time=7.86 ms
+[1794165137.062350] 64 bytes from 192.168.0.5: icmp_seq=68 ttl=255 time=6.48 ms
+[1794165137.569057] 64 bytes from 192.168.0.5: icmp_seq=69 ttl=255 time=6.10 ms
+[1794165138.081472] 64 bytes from 192.168.0.5: icmp_seq=70 ttl=255 time=4.21 ms
+[1794165138.616706] 64 bytes from 192.168.0.5: icmp_seq=71 ttl=255 time=11.9 ms
+[1794165139.112263] 64 bytes from 192.168.0.5: icmp_seq=72 ttl=255 time=5.99 ms
+[1794165139.645743] 64 bytes from 192.168.0.5: icmp_seq=73 ttl=255 time=8.85 ms
+[1794165140.170804] 64 bytes from 192.168.0.5: icmp_seq=74 ttl=255 time=6.15 ms
+[1794165140.679040] 64 bytes from 192.168.0.5: icmp_seq=75 ttl=255 time=5.64 ms
+[1794165141.179539] 64 bytes from 192.168.0.5: icmp_seq=76 ttl=255 time=4.76 ms
+[1794165141.713817] 64 bytes from 192.168.0.5: icmp_seq=77 ttl=255 time=5.90 ms
+[1794165142.215722] 64 bytes from 192.168.0.5: icmp_seq=78 ttl=255 time=6.51 ms
+[1794165142.727557] 64 bytes from 192.168.0.5: icmp_seq=79 ttl=255 time=8.26 ms
+[1794165143.255652] 64 bytes from 192.168.0.5: icmp_seq=80 ttl=255 time=5.60 ms
+[1794165143.839869] 64 bytes from 192.168.0.5: icmp_seq=81 ttl=255 time=14.3 ms
+[1794165144.339197] 64 bytes from 192.168.0.5: icmp_seq=82 ttl=255 time=11.5 ms
+[1794165144.919012] 64 bytes from 192.168.0.5: icmp_seq=83 ttl=255 time=6.94 ms
+[1794165145.426480] 64 bytes from 192.168.0.5: icmp_seq=84 ttl=255 time=9.29 ms
+[1794165145.938116] 64 bytes from 192.168.0.5: icmp_seq=85 ttl=255 time=5.03 ms
+[1794165146.443624] 64 bytes from 192.168.0.5: icmp_seq=86 ttl=255 time=9.47 ms
+[1794165146.947488] 64 bytes from 192.168.0.5: icmp_seq=87 ttl=255 time=4.97 ms
+[1794165147.453729] 64 bytes from 192.168.0.5: icmp_seq=88 ttl=255 time=10.3 ms
+[1794165147.992756] 64 bytes from 192.168.0.5: icmp_seq=89 ttl=255 time=12.4 ms
+[1794165148.489910] 64 bytes from 192.168.0.5: icmp_seq=90 ttl=255 time=7.92 ms
+[1794165149.006272] 64 bytes from 192.168.0.5: icmp_seq=91 ttl=255 time=4.05 ms
+[1794165149.507954] 64 bytes from 192.168.0.5: icmp_seq=92 ttl=255 time=5.69 ms
+[1794165150.010530] 64 bytes from 192.168.0.5: icmp_seq=93 ttl=255 time=6.48 ms
+[1794165150.547928] 64 bytes from 192.168.0.5: icmp_seq=94 ttl=255 time=9.55 ms
+[1794165151.049370] 64 bytes from 192.168.0.5: icmp_seq=95 ttl=255 time=6.72 ms
+[1794165151.549196] 64 bytes from 192.168.0.5: icmp_seq=96 ttl=255 time=6.26 ms
+[1794165152.060027] 64 bytes from 192.168.0.5: icmp_seq=97 ttl=255 time=9.43 ms
+[1794165152.559944] 64 bytes from 192.168.0.5: icmp_seq=98 ttl=255 time=5.98 ms
+[1794165153.204071] 64 bytes from 192.168.0.5: icmp_seq=99 ttl=255 time=9.31 ms
+[1794165153.702888] 64 bytes from 192.168.0.5: icmp_seq=100 ttl=255 time=8.28 ms
+[1794165154.205641] 64 bytes from 192.168.0.5: icmp_seq=101 ttl=255 time=7.12 ms
+[1794165154.793998] 64 bytes from 192.168.0.5: icmp_seq=102 ttl=255 time=8.43 ms
+[1794165155.291735] 64 bytes from 192.168.0.5: icmp_seq=103 ttl=255 time=4.65 ms
+[1794165155.799904] 64 bytes from 192.168.0.5: icmp_seq=104 ttl=255 time=10.7 ms
+ping: Warning: invalid tv_usec -216358324699834999 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+ping: Warning: invalid tv_usec -216358324699830662 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.140765] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699830609 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.140811] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699830570 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.140848] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699830534 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.140885] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699830498 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.140921] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699830462 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.140957] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699830426 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.140992] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699830390 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.141028] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699829909 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.141522] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699829853 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.141566] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699829816 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.141613] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699829771 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.141638] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699829745 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.141664] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699829720 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.141690] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699829694 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.141715] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699829669 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.141740] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699829644 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.141765] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699829619 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.141791] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699829593 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.141816] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699829568 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.141841] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699829543 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.141866] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699829512 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.141898] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699829486 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.141923] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699829461 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.141948] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699829436 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.141974] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699829410 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.141999] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699829385 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.142024] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699829360 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.142641] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699828738 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.142672] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699828710 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.142699] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699828684 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.142751] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699828628 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.142811] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699828572 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.142837] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699828547 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.142863] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699828521 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.142888] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699828496 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.142913] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699828471 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.142939] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699828445 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.142964] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699828420 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.142989] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699828395 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.143015] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699828369 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.143683] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699827694 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.143716] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699827658 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.143752] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699827632 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.143778] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699827321 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.144096] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699827286 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.144123] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699826808 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.144603] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699826780 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.144629] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699826755 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.144654] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699826730 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.144679] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699826705 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.144705] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699826679 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.144730] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699826625 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.144786] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699826586 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.144823] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699826560 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.144849] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699826535 us
+ping: Warning: time of day goes back (-253046203299461 s), taking countermeasures
+[1794165185.144874] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 30 fd aa f8 0 9f c1 c9 f0 6a 0 0 0 0 a9 63 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699833911 us
+ping: Warning: time of day goes back (-258543761438338 s), taking countermeasures
+[1794165188.137558] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 5d dd aa f8 0 a4 c3 c9 f0 6a 0 0 0 0 71 7e a 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699833811 us
+ping: Warning: time of day goes back (-258543761438338 s), taking countermeasures
+[1794165188.137615] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 5d dd aa f8 0 a4 c3 c9 f0 6a 0 0 0 0 71 7e a 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699833760 us
+ping: Warning: time of day goes back (-258543761438338 s), taking countermeasures
+[1794165188.137659] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 5d dd aa f8 0 a4 c3 c9 f0 6a 0 0 0 0 71 7e a 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699833724 us
+ping: Warning: time of day goes back (-258543761438338 s), taking countermeasures
+[1794165188.137686] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 5d dd aa f8 0 a4 c3 c9 f0 6a 0 0 0 0 71 7e a 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699833698 us
+ping: Warning: time of day goes back (-258543761438338 s), taking countermeasures
+[1794165188.137712] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 5d dd aa f8 0 a4 c3 c9 f0 6a 0 0 0 0 71 7e a 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699831139 us
+ping: Warning: time of day goes back (-265140831204991 s), taking countermeasures
+[1794165191.140429] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 11 e1 aa f8 0 aa c6 c9 f0 6a 0 0 0 0 b9 74 b 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699830942 us
+ping: Warning: time of day goes back (-265140831204991 s), taking countermeasures
+[1794165191.140473] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 11 e1 aa f8 0 aa c6 c9 f0 6a 0 0 0 0 b9 74 b 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699830906 us
+ping: Warning: time of day goes back (-265140831204991 s), taking countermeasures
+[1794165191.140529] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 11 e1 aa f8 0 aa c6 c9 f0 6a 0 0 0 0 b9 74 b 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699830850 us
+ping: Warning: time of day goes back (-265140831204991 s), taking countermeasures
+[1794165191.140564] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 11 e1 aa f8 0 aa c6 c9 f0 6a 0 0 0 0 b9 74 b 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699830817 us
+ping: Warning: time of day goes back (-265140831204991 s), taking countermeasures
+[1794165191.140597] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 11 e1 aa f8 0 aa c6 c9 f0 6a 0 0 0 0 b9 74 b 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699830783 us
+ping: Warning: time of day goes back (-265140831204991 s), taking countermeasures
+[1794165191.140631] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 11 e1 aa f8 0 aa c6 c9 f0 6a 0 0 0 0 b9 74 b 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699828152 us
+ping: Warning: time of day goes back (-270638389343868 s), taking countermeasures
+[1794165194.143417] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 1c 11 aa f8 0 af c9 c9 f0 6a 0 0 0 0 ad 3f a 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699827958 us
+ping: Warning: time of day goes back (-270638389343868 s), taking countermeasures
+[1794165194.143458] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 1c 11 aa f8 0 af c9 c9 f0 6a 0 0 0 0 ad 3f a 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699827922 us
+ping: Warning: time of day goes back (-270638389343868 s), taking countermeasures
+[1794165194.143488] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 1c 11 aa f8 0 af c9 c9 f0 6a 0 0 0 0 ad 3f a 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699827890 us
+ping: Warning: time of day goes back (-270638389343868 s), taking countermeasures
+[1794165194.143520] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 1c 11 aa f8 0 af c9 c9 f0 6a 0 0 0 0 ad 3f a 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699827863 us
+ping: Warning: time of day goes back (-270638389343868 s), taking countermeasures
+[1794165194.143546] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 1c 11 aa f8 0 af c9 c9 f0 6a 0 0 0 0 ad 3f a 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699828025 us
+ping: Warning: time of day goes back (-277235459110521 s), taking countermeasures
+[1794165197.143564] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 c6 18 aa f8 0 b5 cc c9 f0 6a 0 0 0 0 fe 31 c 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699827814 us
+ping: Warning: time of day goes back (-277235459110521 s), taking countermeasures
+[1794165197.143596] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 c6 18 aa f8 0 b5 cc c9 f0 6a 0 0 0 0 fe 31 c 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699827767 us
+ping: Warning: time of day goes back (-277235459110521 s), taking countermeasures
+[1794165197.143642] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 c6 18 aa f8 0 b5 cc c9 f0 6a 0 0 0 0 fe 31 c 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699827741 us
+ping: Warning: time of day goes back (-277235459110521 s), taking countermeasures
+[1794165197.143668] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 c6 18 aa f8 0 b5 cc c9 f0 6a 0 0 0 0 fe 31 c 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699827716 us
+ping: Warning: time of day goes back (-277235459110521 s), taking countermeasures
+[1794165197.143693] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 c6 18 aa f8 0 b5 cc c9 f0 6a 0 0 0 0 fe 31 c 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699827691 us
+ping: Warning: time of day goes back (-277235459110521 s), taking countermeasures
+[1794165197.143718] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 c6 18 aa f8 0 b5 cc c9 f0 6a 0 0 0 0 fe 31 c 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699827507 us
+ping: Warning: time of day goes back (-2361847133814 s), taking countermeasures
+[1794165200.143953] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 d7 f8 aa f8 0 bb cf c9 f0 6a 0 0 0 0 e8 4b d 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699827423 us
+ping: Warning: time of day goes back (-2361847133814 s), taking countermeasures
+[1794165200.143987] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 d7 f8 aa f8 0 bb cf c9 f0 6a 0 0 0 0 e8 4b d 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699827396 us
+ping: Warning: time of day goes back (-2361847133814 s), taking countermeasures
+[1794165200.144015] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 d7 f8 aa f8 0 bb cf c9 f0 6a 0 0 0 0 e8 4b d 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699827363 us
+ping: Warning: time of day goes back (-2361847133814 s), taking countermeasures
+[1794165200.144061] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 d7 f8 aa f8 0 bb cf c9 f0 6a 0 0 0 0 e8 4b d 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699827319 us
+ping: Warning: time of day goes back (-2361847133814 s), taking countermeasures
+[1794165200.144091] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 d7 f8 aa f8 0 bb cf c9 f0 6a 0 0 0 0 e8 4b d 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699827293 us
+ping: Warning: time of day goes back (-2361847133814 s), taking countermeasures
+[1794165200.144116] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 d7 f8 aa f8 0 bb cf c9 f0 6a 0 0 0 0 e8 4b d 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699825966 us
+ping: Warning: time of day goes back (-8958916900467 s), taking countermeasures
+[1794165203.145582] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 b3 a0 aa f8 0 c1 d3 c9 f0 6a 0 0 0 0 15 9e 0 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699825785 us
+ping: Warning: time of day goes back (-8958916900467 s), taking countermeasures
+[1794165203.145627] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 b3 a0 aa f8 0 c1 d3 c9 f0 6a 0 0 0 0 15 9e 0 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699825755 us
+ping: Warning: time of day goes back (-8958916900467 s), taking countermeasures
+[1794165203.145655] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 b3 a0 aa f8 0 c1 d3 c9 f0 6a 0 0 0 0 15 9e 0 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699825729 us
+ping: Warning: time of day goes back (-8958916900467 s), taking countermeasures
+[1794165203.145680] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 b3 a0 aa f8 0 c1 d3 c9 f0 6a 0 0 0 0 15 9e 0 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699825704 us
+ping: Warning: time of day goes back (-8958916900467 s), taking countermeasures
+[1794165203.145705] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 b3 a0 aa f8 0 c1 d3 c9 f0 6a 0 0 0 0 15 9e 0 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699825679 us
+ping: Warning: time of day goes back (-8958916900467 s), taking countermeasures
+[1794165203.145730] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 b3 a0 aa f8 0 c1 d3 c9 f0 6a 0 0 0 0 15 9e 0 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699822779 us
+ping: Warning: time of day goes back (-14456475039344 s), taking countermeasures
+[1794165206.148768] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 3d 4 aa f8 0 c6 d5 c9 f0 6a 0 0 0 0 7e 35 c 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699822606 us
+ping: Warning: time of day goes back (-14456475039344 s), taking countermeasures
+[1794165206.148804] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 3d 4 aa f8 0 c6 d5 c9 f0 6a 0 0 0 0 7e 35 c 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699822579 us
+ping: Warning: time of day goes back (-14456475039344 s), taking countermeasures
+[1794165206.148831] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 3d 4 aa f8 0 c6 d5 c9 f0 6a 0 0 0 0 7e 35 c 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699822553 us
+ping: Warning: time of day goes back (-14456475039344 s), taking countermeasures
+[1794165206.148856] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 3d 4 aa f8 0 c6 d5 c9 f0 6a 0 0 0 0 7e 35 c 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699822528 us
+ping: Warning: time of day goes back (-14456475039344 s), taking countermeasures
+[1794165206.148881] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 3d 4 aa f8 0 c6 d5 c9 f0 6a 0 0 0 0 7e 35 c 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699819836 us
+ping: Warning: time of day goes back (-21053544805997 s), taking countermeasures
+[1794165209.151682] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 8a 86 aa f8 0 cc d8 c9 f0 6a 0 0 0 0 2c ad d 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699819692 us
+ping: Warning: time of day goes back (-21053544805997 s), taking countermeasures
+[1794165209.151719] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 8a 86 aa f8 0 cc d8 c9 f0 6a 0 0 0 0 2c ad d 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699819664 us
+ping: Warning: time of day goes back (-21053544805997 s), taking countermeasures
+[1794165209.151745] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 8a 86 aa f8 0 cc d8 c9 f0 6a 0 0 0 0 2c ad d 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699819639 us
+ping: Warning: time of day goes back (-21053544805997 s), taking countermeasures
+[1794165209.151771] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 8a 86 aa f8 0 cc d8 c9 f0 6a 0 0 0 0 2c ad d 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699819613 us
+ping: Warning: time of day goes back (-21053544805997 s), taking countermeasures
+[1794165209.151796] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 8a 86 aa f8 0 cc d8 c9 f0 6a 0 0 0 0 2c ad d 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699819588 us
+ping: Warning: time of day goes back (-21053544805997 s), taking countermeasures
+[1794165209.151821] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 8a 86 aa f8 0 cc d8 c9 f0 6a 0 0 0 0 2c ad d 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699820892 us
+ping: Warning: time of day goes back (-27650614572650 s), taking countermeasures
+[1794165212.150930] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 42 a2 aa f8 0 d2 dc c9 f0 6a 0 0 0 0 7d 8b 0 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699820441 us
+ping: Warning: time of day goes back (-27650614572650 s), taking countermeasures
+[1794165212.150973] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 42 a2 aa f8 0 d2 dc c9 f0 6a 0 0 0 0 7d 8b 0 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699820406 us
+ping: Warning: time of day goes back (-27650614572650 s), taking countermeasures
+[1794165212.151008] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 42 a2 aa f8 0 d2 dc c9 f0 6a 0 0 0 0 7d 8b 0 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699820373 us
+ping: Warning: time of day goes back (-27650614572650 s), taking countermeasures
+[1794165212.151041] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 42 a2 aa f8 0 d2 dc c9 f0 6a 0 0 0 0 7d 8b 0 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699820340 us
+ping: Warning: time of day goes back (-27650614572650 s), taking countermeasures
+[1794165212.151074] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 42 a2 aa f8 0 d2 dc c9 f0 6a 0 0 0 0 7d 8b 0 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699820284 us
+ping: Warning: time of day goes back (-27650614572650 s), taking countermeasures
+[1794165212.151130] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 42 a2 aa f8 0 d2 dc c9 f0 6a 0 0 0 0 7d 8b 0 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699819389 us
+ping: Warning: time of day goes back (-34247684339303 s), taking countermeasures
+[1794165215.152065] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 c5 65 aa f8 0 d8 df c9 f0 6a 0 0 0 0 f6 c1 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699819313 us
+ping: Warning: time of day goes back (-34247684339303 s), taking countermeasures
+[1794165215.152097] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 c5 65 aa f8 0 d8 df c9 f0 6a 0 0 0 0 f6 c1 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699819286 us
+ping: Warning: time of day goes back (-34247684339303 s), taking countermeasures
+[1794165215.152123] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 c5 65 aa f8 0 d8 df c9 f0 6a 0 0 0 0 f6 c1 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699819260 us
+ping: Warning: time of day goes back (-34247684339303 s), taking countermeasures
+[1794165215.152149] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 c5 65 aa f8 0 d8 df c9 f0 6a 0 0 0 0 f6 c1 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699819235 us
+ping: Warning: time of day goes back (-34247684339303 s), taking countermeasures
+[1794165215.152174] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 c5 65 aa f8 0 d8 df c9 f0 6a 0 0 0 0 f6 c1 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699819210 us
+ping: Warning: time of day goes back (-34247684339303 s), taking countermeasures
+[1794165215.152199] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 c5 65 aa f8 0 d8 df c9 f0 6a 0 0 0 0 f6 c1 1 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699815662 us
+ping: Warning: time of day goes back (-39745242478180 s), taking countermeasures
+[1794165218.155799] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 95 e5 aa f8 0 dd e1 c9 f0 6a 0 0 0 0 1a 3d b 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699815576 us
+ping: Warning: time of day goes back (-39745242478180 s), taking countermeasures
+[1794165218.155843] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 95 e5 aa f8 0 dd e1 c9 f0 6a 0 0 0 0 1a 3d b 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699815539 us
+ping: Warning: time of day goes back (-39745242478180 s), taking countermeasures
+[1794165218.155880] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 95 e5 aa f8 0 dd e1 c9 f0 6a 0 0 0 0 1a 3d b 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699815503 us
+ping: Warning: time of day goes back (-39745242478180 s), taking countermeasures
+[1794165218.155926] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 95 e5 aa f8 0 dd e1 c9 f0 6a 0 0 0 0 1a 3d b 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699815457 us
+ping: Warning: time of day goes back (-39745242478180 s), taking countermeasures
+[1794165218.155952] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 95 e5 aa f8 0 dd e1 c9 f0 6a 0 0 0 0 1a 3d b 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699816220 us
+ping: Warning: time of day goes back (-46342312244833 s), taking countermeasures
+[1794165221.155319] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 17 f8 aa f8 0 e3 e4 c9 f0 6a 0 0 0 0 91 24 f 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699816050 us
+ping: Warning: time of day goes back (-46342312244833 s), taking countermeasures
+[1794165221.155367] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 17 f8 aa f8 0 e3 e4 c9 f0 6a 0 0 0 0 91 24 f 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699816012 us
+ping: Warning: time of day goes back (-46342312244833 s), taking countermeasures
+[1794165221.155406] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 17 f8 aa f8 0 e3 e4 c9 f0 6a 0 0 0 0 91 24 f 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699815973 us
+ping: Warning: time of day goes back (-46342312244833 s), taking countermeasures
+[1794165221.155495] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 17 f8 aa f8 0 e3 e4 c9 f0 6a 0 0 0 0 91 24 f 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699815880 us
+ping: Warning: time of day goes back (-46342312244833 s), taking countermeasures
+[1794165221.155535] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 17 f8 aa f8 0 e3 e4 c9 f0 6a 0 0 0 0 91 24 f 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699815845 us
+ping: Warning: time of day goes back (-46342312244833 s), taking countermeasures
+[1794165221.155569] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 17 f8 aa f8 0 e3 e4 c9 f0 6a 0 0 0 0 91 24 f 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699815330 us
+ping: Warning: time of day goes back (-51839870383710 s), taking countermeasures
+[1794165224.156212] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 b7 9d aa f8 0 e8 e7 c9 f0 6a 0 0 0 0 f2 79 b 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699815158 us
+ping: Warning: time of day goes back (-51839870383710 s), taking countermeasures
+[1794165224.156258] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 b7 9d aa f8 0 e8 e7 c9 f0 6a 0 0 0 0 f2 79 b 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699815120 us
+ping: Warning: time of day goes back (-51839870383710 s), taking countermeasures
+[1794165224.156973] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 b7 9d aa f8 0 e8 e7 c9 f0 6a 0 0 0 0 f2 79 b 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699814377 us
+ping: Warning: time of day goes back (-51839870383710 s), taking countermeasures
+[1794165224.157039] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 b7 9d aa f8 0 e8 e7 c9 f0 6a 0 0 0 0 f2 79 b 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699814340 us
+ping: Warning: time of day goes back (-51839870383710 s), taking countermeasures
+[1794165224.157074] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 b7 9d aa f8 0 e8 e7 c9 f0 6a 0 0 0 0 f2 79 b 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699813537 us
+ping: Warning: time of day goes back (-58436940150363 s), taking countermeasures
+[1794165227.157916] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 5 2b aa f8 0 ee ea c9 f0 6a 0 0 0 0 9e e6 e 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699813462 us
+ping: Warning: time of day goes back (-58436940150363 s), taking countermeasures
+[1794165227.157948] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 5 2b aa f8 0 ee ea c9 f0 6a 0 0 0 0 9e e6 e 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699813435 us
+ping: Warning: time of day goes back (-58436940150363 s), taking countermeasures
+[1794165227.157974] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 5 2b aa f8 0 ee ea c9 f0 6a 0 0 0 0 9e e6 e 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699813409 us
+ping: Warning: time of day goes back (-58436940150363 s), taking countermeasures
+[1794165227.158010] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 5 2b aa f8 0 ee ea c9 f0 6a 0 0 0 0 9e e6 e 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699813367 us
+ping: Warning: time of day goes back (-58436940150363 s), taking countermeasures
+[1794165227.158049] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 5 2b aa f8 0 ee ea c9 f0 6a 0 0 0 0 9e e6 e 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699813335 us
+ping: Warning: time of day goes back (-58436940150363 s), taking countermeasures
+[1794165227.158078] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 5 2b aa f8 0 ee ea c9 f0 6a 0 0 0 0 9e e6 e 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699811886 us
+ping: Warning: time of day goes back (-63934498289240 s), taking countermeasures
+[1794165230.159675] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 cc f3 aa f8 0 f3 ed c9 f0 6a 0 0 0 0 d7 18 b 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699811696 us
+ping: Warning: time of day goes back (-63934498289240 s), taking countermeasures
+[1794165230.159718] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 cc f3 aa f8 0 f3 ed c9 f0 6a 0 0 0 0 d7 18 b 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699811660 us
+ping: Warning: time of day goes back (-63934498289240 s), taking countermeasures
+[1794165230.159753] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 cc f3 aa f8 0 f3 ed c9 f0 6a 0 0 0 0 d7 18 b 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699811605 us
+ping: Warning: time of day goes back (-63934498289240 s), taking countermeasures
+[1794165230.159810] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 cc f3 aa f8 0 f3 ed c9 f0 6a 0 0 0 0 d7 18 b 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699811570 us
+ping: Warning: time of day goes back (-63934498289240 s), taking countermeasures
+[1794165230.159844] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 cc f3 aa f8 0 f3 ed c9 f0 6a 0 0 0 0 d7 18 b 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699810896 us
+ping: Warning: time of day goes back (-70531568055893 s), taking countermeasures
+[1794165233.165475] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 19 cd aa f8 0 f9 f0 c9 f0 6a 0 0 0 0 84 39 e 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699805896 us
+ping: Warning: time of day goes back (-70531568055893 s), taking countermeasures
+[1794165233.165519] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 19 cd aa f8 0 f9 f0 c9 f0 6a 0 0 0 0 84 39 e 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699805861 us
+ping: Warning: time of day goes back (-70531568055893 s), taking countermeasures
+[1794165233.165552] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 19 cd aa f8 0 f9 f0 c9 f0 6a 0 0 0 0 84 39 e 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699805829 us
+ping: Warning: time of day goes back (-70531568055893 s), taking countermeasures
+[1794165233.165584] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 19 cd aa f8 0 f9 f0 c9 f0 6a 0 0 0 0 84 39 e 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699805797 us
+ping: Warning: time of day goes back (-70531568055893 s), taking countermeasures
+[1794165233.165616] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 19 cd aa f8 0 f9 f0 c9 f0 6a 0 0 0 0 84 39 e 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699805765 us
+ping: Warning: time of day goes back (-70531568055893 s), taking countermeasures
+[1794165233.165648] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 19 cd aa f8 0 f9 f0 c9 f0 6a 0 0 0 0 84 39 e 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699808879 us
+ping: Warning: time of day goes back (-77128637822546 s), taking countermeasures
+[1794165236.162844] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 3d c3 aa f8 0 ff f4 c9 f0 6a 0 0 0 0 6a 3d 0 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699808522 us
+ping: Warning: time of day goes back (-77128637822546 s), taking countermeasures
+[1794165236.162893] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 3d c3 aa f8 0 ff f4 c9 f0 6a 0 0 0 0 6a 3d 0 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699808485 us
+ping: Warning: time of day goes back (-77128637822546 s), taking countermeasures
+[1794165236.162952] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 3d c3 aa f8 0 ff f4 c9 f0 6a 0 0 0 0 6a 3d 0 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699808428 us
+ping: Warning: time of day goes back (-77128637822546 s), taking countermeasures
+[1794165236.162986] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 3d c3 aa f8 0 ff f4 c9 f0 6a 0 0 0 0 6a 3d 0 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699808394 us
+ping: Warning: time of day goes back (-77128637822546 s), taking countermeasures
+[1794165236.163020] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 3d c3 aa f8 0 ff f4 c9 f0 6a 0 0 0 0 6a 3d 0 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699808360 us
+ping: Warning: time of day goes back (-77128637822546 s), taking countermeasures
+[1794165236.163053] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 3d c3 aa f8 0 ff f4 c9 f0 6a 0 0 0 0 6a 3d 0 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+[1794165236.524486] 64 bytes from 192.168.0.5: icmp_seq=256 ttl=255 time=7.78 ms
+[1794165237.023449] 64 bytes from 192.168.0.5: icmp_seq=257 ttl=255 time=4.54 ms
+[1794165237.524765] 64 bytes from 192.168.0.5: icmp_seq=258 ttl=255 time=4.25 ms
+[1794165238.027239] 64 bytes from 192.168.0.5: icmp_seq=259 ttl=255 time=4.56 ms
+[1794165238.531482] 64 bytes from 192.168.0.5: icmp_seq=260 ttl=255 time=6.59 ms
+[1794165239.034961] 64 bytes from 192.168.0.5: icmp_seq=261 ttl=255 time=8.91 ms
+[1794165239.531576] 64 bytes from 192.168.0.5: icmp_seq=262 ttl=255 time=4.78 ms
+[1794165240.034196] 64 bytes from 192.168.0.5: icmp_seq=263 ttl=255 time=4.88 ms
+[1794165240.534588] 64 bytes from 192.168.0.5: icmp_seq=264 ttl=255 time=4.28 ms
+[1794165241.041210] 64 bytes from 192.168.0.5: icmp_seq=265 ttl=255 time=4.63 ms
+[1794165241.547077] 64 bytes from 192.168.0.5: icmp_seq=266 ttl=255 time=5.91 ms
+[1794165242.067555] 64 bytes from 192.168.0.5: icmp_seq=267 ttl=255 time=4.45 ms
+[1794165242.571369] 64 bytes from 192.168.0.5: icmp_seq=268 ttl=255 time=5.29 ms
+[1794165243.079529] 64 bytes from 192.168.0.5: icmp_seq=269 ttl=255 time=5.40 ms
+[1794165243.580345] 64 bytes from 192.168.0.5: icmp_seq=270 ttl=255 time=4.22 ms
+[1794165244.083830] 64 bytes from 192.168.0.5: icmp_seq=271 ttl=255 time=5.76 ms
+[1794165244.583948] 64 bytes from 192.168.0.5: icmp_seq=272 ttl=255 time=4.37 ms
+[1794165245.108073] 64 bytes from 192.168.0.5: icmp_seq=273 ttl=255 time=4.61 ms
+[1794165245.609306] 64 bytes from 192.168.0.5: icmp_seq=274 ttl=255 time=4.09 ms
+[1794165246.121276] 64 bytes from 192.168.0.5: icmp_seq=275 ttl=255 time=4.63 ms
+[1794165246.631356] 64 bytes from 192.168.0.5: icmp_seq=276 ttl=255 time=4.33 ms
+[1794165247.145568] 64 bytes from 192.168.0.5: icmp_seq=277 ttl=255 time=4.85 ms
+[1794165247.648973] 64 bytes from 192.168.0.5: icmp_seq=278 ttl=255 time=6.34 ms
+[1794165248.232680] 64 bytes from 192.168.0.5: icmp_seq=279 ttl=255 time=5.58 ms
+[1794165248.733050] 64 bytes from 192.168.0.5: icmp_seq=280 ttl=255 time=4.10 ms
+[1794165249.241590] 64 bytes from 192.168.0.5: icmp_seq=281 ttl=255 time=5.79 ms
+[1794165249.752678] 64 bytes from 192.168.0.5: icmp_seq=282 ttl=255 time=4.24 ms
+[1794165250.255302] 64 bytes from 192.168.0.5: icmp_seq=283 ttl=255 time=6.09 ms
+[1794165250.755861] 64 bytes from 192.168.0.5: icmp_seq=284 ttl=255 time=5.25 ms
+[1794165251.257456] 64 bytes from 192.168.0.5: icmp_seq=285 ttl=255 time=4.32 ms
+[1794165251.786951] 64 bytes from 192.168.0.5: icmp_seq=286 ttl=255 time=5.69 ms
+[1794165252.290872] 64 bytes from 192.168.0.5: icmp_seq=287 ttl=255 time=4.42 ms
+[1794165252.798002] 64 bytes from 192.168.0.5: icmp_seq=288 ttl=255 time=4.34 ms
+[1794165253.299167] 64 bytes from 192.168.0.5: icmp_seq=289 ttl=255 time=4.28 ms
+ping: Warning: invalid tv_usec -216358324699786949 us
+ping: Warning: time of day goes back (-148596893627951 s), taking countermeasures
+[1794165271.185035] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 27 d8 aa f8 1 40 16 ca f0 6a 0 0 0 0 50 e7 d 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699786335 us
+ping: Warning: time of day goes back (-148596893627951 s), taking countermeasures
+[1794165271.185080] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 27 d8 aa f8 1 40 16 ca f0 6a 0 0 0 0 50 e7 d 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699786299 us
+ping: Warning: time of day goes back (-148596893627951 s), taking countermeasures
+[1794165271.185114] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 27 d8 aa f8 1 40 16 ca f0 6a 0 0 0 0 50 e7 d 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699786266 us
+ping: Warning: time of day goes back (-148596893627951 s), taking countermeasures
+[1794165271.185148] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 27 d8 aa f8 1 40 16 ca f0 6a 0 0 0 0 50 e7 d 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699786232 us
+ping: Warning: time of day goes back (-148596893627951 s), taking countermeasures
+[1794165271.185182] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 27 d8 aa f8 1 40 16 ca f0 6a 0 0 0 0 50 e7 d 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699786198 us
+ping: Warning: time of day goes back (-148596893627951 s), taking countermeasures
+[1794165271.185216] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 27 d8 aa f8 1 40 16 ca f0 6a 0 0 0 0 50 e7 d 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699786164 us
+ping: Warning: time of day goes back (-148596893627951 s), taking countermeasures
+[1794165271.185249] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 27 d8 aa f8 1 40 16 ca f0 6a 0 0 0 0 50 e7 d 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699786130 us
+ping: Warning: time of day goes back (-148596893627951 s), taking countermeasures
+[1794165271.185284] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 27 d8 aa f8 1 40 16 ca f0 6a 0 0 0 0 50 e7 d 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699786097 us
+ping: Warning: time of day goes back (-148596893627951 s), taking countermeasures
+[1794165271.185317] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 27 d8 aa f8 1 40 16 ca f0 6a 0 0 0 0 50 e7 d 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699786063 us
+ping: Warning: time of day goes back (-148596893627951 s), taking countermeasures
+[1794165271.185351] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 27 d8 aa f8 1 40 16 ca f0 6a 0 0 0 0 50 e7 d 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699786029 us
+ping: Warning: time of day goes back (-148596893627951 s), taking countermeasures
+[1794165271.185405] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 27 d8 aa f8 1 40 16 ca f0 6a 0 0 0 0 50 e7 d 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699785974 us
+ping: Warning: time of day goes back (-148596893627951 s), taking countermeasures
+[1794165271.185441] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 27 d8 aa f8 1 40 16 ca f0 6a 0 0 0 0 50 e7 d 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699785938 us
+ping: Warning: time of day goes back (-148596893627951 s), taking countermeasures
+[1794165271.185475] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 27 d8 aa f8 1 40 16 ca f0 6a 0 0 0 0 50 e7 d 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699785905 us
+ping: Warning: time of day goes back (-148596893627951 s), taking countermeasures
+[1794165271.185509] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 27 d8 aa f8 1 40 16 ca f0 6a 0 0 0 0 50 e7 d 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699785871 us
+ping: Warning: time of day goes back (-148596893627951 s), taking countermeasures
+[1794165271.189076] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 27 d8 aa f8 1 40 16 ca f0 6a 0 0 0 0 50 e7 d 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699782295 us
+ping: Warning: time of day goes back (-148596893627951 s), taking countermeasures
+[1794165271.189125] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 27 d8 aa f8 1 40 16 ca f0 6a 0 0 0 0 50 e7 d 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699782251 us
+ping: Warning: time of day goes back (-148596893627951 s), taking countermeasures
+[1794165271.189172] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 27 d8 aa f8 1 40 16 ca f0 6a 0 0 0 0 50 e7 d 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699782202 us
+ping: Warning: time of day goes back (-148596893627951 s), taking countermeasures
+[1794165271.189217] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 27 d8 aa f8 1 40 16 ca f0 6a 0 0 0 0 50 e7 d 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699782160 us
+ping: Warning: time of day goes back (-148596893627951 s), taking countermeasures
+[1794165271.189263] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 27 d8 aa f8 1 40 16 ca f0 6a 0 0 0 0 50 e7 d 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699782112 us
+ping: Warning: time of day goes back (-148596893627951 s), taking countermeasures
+[1794165271.189312] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 27 d8 aa f8 1 40 16 ca f0 6a 0 0 0 0 50 e7 d 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699782062 us
+ping: Warning: time of day goes back (-148596893627951 s), taking countermeasures
+[1794165271.189357] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 27 d8 aa f8 1 40 16 ca f0 6a 0 0 0 0 50 e7 d 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699782000 us
+ping: Warning: time of day goes back (-148596893627951 s), taking countermeasures
+[1794165271.189423] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 27 d8 aa f8 1 40 16 ca f0 6a 0 0 0 0 50 e7 d 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699781948 us
+ping: Warning: time of day goes back (-148596893627951 s), taking countermeasures
+[1794165271.189473] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 27 d8 aa f8 1 40 16 ca f0 6a 0 0 0 0 50 e7 d 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699781903 us
+ping: Warning: time of day goes back (-148596893627951 s), taking countermeasures
+[1794165271.189515] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 27 d8 aa f8 1 40 16 ca f0 6a 0 0 0 0 50 e7 d 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699781855 us
+ping: Warning: time of day goes back (-148596893627951 s), taking countermeasures
+[1794165271.189565] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 27 d8 aa f8 1 40 16 ca f0 6a 0 0 0 0 50 e7 d 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699781811 us
+ping: Warning: time of day goes back (-148596893627951 s), taking countermeasures
+[1794165271.189613] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 27 d8 aa f8 1 40 16 ca f0 6a 0 0 0 0 50 e7 d 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699781762 us
+ping: Warning: time of day goes back (-148596893627951 s), taking countermeasures
+[1794165271.189655] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 27 d8 aa f8 1 40 16 ca f0 6a 0 0 0 0 50 e7 d 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699781720 us
+ping: Warning: time of day goes back (-148596893627951 s), taking countermeasures
+[1794165271.189703] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 27 d8 aa f8 1 40 16 ca f0 6a 0 0 0 0 50 e7 d 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699781673 us
+ping: Warning: time of day goes back (-148596893627951 s), taking countermeasures
+[1794165271.189750] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 27 d8 aa f8 1 40 16 ca f0 6a 0 0 0 0 50 e7 d 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699781624 us
+ping: Warning: time of day goes back (-148596893627951 s), taking countermeasures
+[1794165271.189793] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 27 d8 aa f8 1 40 16 ca f0 6a 0 0 0 0 50 e7 d 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699781585 us
+ping: Warning: time of day goes back (-148596893627951 s), taking countermeasures
+[1794165271.189832] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 27 d8 aa f8 1 40 16 ca f0 6a 0 0 0 0 50 e7 d 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699793714 us
+ping: Warning: time of day goes back (-154094451766828 s), taking countermeasures
+[1794165274.178136] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 8 15 aa f8 1 45 19 ca f0 6a 0 0 0 0 72 a5 8 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699793200 us
+ping: Warning: time of day goes back (-154094451766828 s), taking countermeasures
+[1794165274.178223] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 8 15 aa f8 1 45 19 ca f0 6a 0 0 0 0 72 a5 8 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699793151 us
+ping: Warning: time of day goes back (-154094451766828 s), taking countermeasures
+[1794165274.178269] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 8 15 aa f8 1 45 19 ca f0 6a 0 0 0 0 72 a5 8 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699793106 us
+ping: Warning: time of day goes back (-154094451766828 s), taking countermeasures
+[1794165274.178314] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 8 15 aa f8 1 45 19 ca f0 6a 0 0 0 0 72 a5 8 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699793064 us
+ping: Warning: time of day goes back (-154094451766828 s), taking countermeasures
+[1794165274.178353] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 8 15 aa f8 1 45 19 ca f0 6a 0 0 0 0 72 a5 8 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699795393 us
+ping: Warning: time of day goes back (-160691521533481 s), taking countermeasures
+[1794165277.176127] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 e0 fd aa f8 1 4b 1c ca f0 6a 0 0 0 0 93 b6 b 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699795248 us
+ping: Warning: time of day goes back (-160691521533481 s), taking countermeasures
+[1794165277.176162] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 e0 fd aa f8 1 4b 1c ca f0 6a 0 0 0 0 93 b6 b 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699795220 us
+ping: Warning: time of day goes back (-160691521533481 s), taking countermeasures
+[1794165277.176189] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 e0 fd aa f8 1 4b 1c ca f0 6a 0 0 0 0 93 b6 b 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699795195 us
+ping: Warning: time of day goes back (-160691521533481 s), taking countermeasures
+[1794165277.176215] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 e0 fd aa f8 1 4b 1c ca f0 6a 0 0 0 0 93 b6 b 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699795169 us
+ping: Warning: time of day goes back (-160691521533481 s), taking countermeasures
+[1794165277.176240] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 e0 fd aa f8 1 4b 1c ca f0 6a 0 0 0 0 93 b6 b 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+ping: Warning: invalid tv_usec -216358324699795144 us
+ping: Warning: time of day goes back (-160691521533481 s), taking countermeasures
+[1794165277.176265] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 e0 fd aa f8 1 4b 1c ca f0 6a 0 0 0 0 93 b6 b 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+[1794165278.991932] 64 bytes from 192.168.0.5: icmp_seq=335 ttl=255 time=46.0 ms
+[1794165279.461507] 64 bytes from 192.168.0.5: icmp_seq=336 ttl=255 time=11.4 ms
+[1794165279.964981] 64 bytes from 192.168.0.5: icmp_seq=337 ttl=255 time=4.54 ms
+[1794165280.485227] 64 bytes from 192.168.0.5: icmp_seq=338 ttl=255 time=4.33 ms
+[1794165280.988605] 64 bytes from 192.168.0.5: icmp_seq=339 ttl=255 time=6.69 ms
+[1794165281.487844] 64 bytes from 192.168.0.5: icmp_seq=340 ttl=255 time=4.75 ms
+[1794165281.991934] 64 bytes from 192.168.0.5: icmp_seq=341 ttl=255 time=4.22 ms
+[1794165282.616051] 64 bytes from 192.168.0.5: icmp_seq=342 ttl=255 time=6.19 ms
+[1794165283.248585] 64 bytes from 192.168.0.5: icmp_seq=343 ttl=255 time=7.41 ms
+[1794165283.747305] 64 bytes from 192.168.0.5: icmp_seq=344 ttl=255 time=4.93 ms
+[1794165284.284172] 64 bytes from 192.168.0.5: icmp_seq=345 ttl=255 time=4.27 ms
+[1794165284.786362] 64 bytes from 192.168.0.5: icmp_seq=346 ttl=255 time=5.05 ms
+[1794165285.292223] 64 bytes from 192.168.0.5: icmp_seq=347 ttl=255 time=4.86 ms
+[1794165285.875215] 64 bytes from 192.168.0.5: icmp_seq=348 ttl=255 time=8.09 ms
+[1794165286.373485] 64 bytes from 192.168.0.5: icmp_seq=349 ttl=255 time=5.51 ms
+[1794165286.875721] 64 bytes from 192.168.0.5: icmp_seq=350 ttl=255 time=4.81 ms
+[1794165287.379120] 64 bytes from 192.168.0.5: icmp_seq=351 ttl=255 time=6.27 ms
+[1794165287.880566] 64 bytes from 192.168.0.5: icmp_seq=352 ttl=255 time=5.43 ms
+[1794165288.390898] 64 bytes from 192.168.0.5: icmp_seq=353 ttl=255 time=14.8 ms
+[1794165288.899340] 64 bytes from 192.168.0.5: icmp_seq=354 ttl=255 time=5.47 ms
+[1794165289.400058] 64 bytes from 192.168.0.5: icmp_seq=355 ttl=255 time=5.27 ms
+[1794165289.952502] 64 bytes from 192.168.0.5: icmp_seq=356 ttl=255 time=6.31 ms
+[1794165290.455906] 64 bytes from 192.168.0.5: icmp_seq=357 ttl=255 time=8.71 ms
+[1794165290.958105] 64 bytes from 192.168.0.5: icmp_seq=358 ttl=255 time=4.65 ms
+[1794165291.459591] 64 bytes from 192.168.0.5: icmp_seq=359 ttl=255 time=4.57 ms
+[1794165291.993932] 64 bytes from 192.168.0.5: icmp_seq=360 ttl=255 time=5.17 ms
+[1794165292.493852] 64 bytes from 192.168.0.5: icmp_seq=361 ttl=255 time=4.26 ms
+[1794165293.006434] 64 bytes from 192.168.0.5: icmp_seq=362 ttl=255 time=5.57 ms
+[1794165293.506931] 64 bytes from 192.168.0.5: icmp_seq=363 ttl=255 time=4.76 ms
+[1794165294.008338] 64 bytes from 192.168.0.5: icmp_seq=364 ttl=255 time=4.42 ms
+[1794165294.511034] 64 bytes from 192.168.0.5: icmp_seq=365 ttl=255 time=4.71 ms
+[1794165295.042513] 64 bytes from 192.168.0.5: icmp_seq=366 ttl=255 time=5.28 ms
+[1794165295.543241] 64 bytes from 192.168.0.5: icmp_seq=367 ttl=255 time=4.54 ms
+[1794165296.053564] 64 bytes from 192.168.0.5: icmp_seq=368 ttl=255 time=8.17 ms
+[1794165296.551167] 64 bytes from 192.168.0.5: icmp_seq=369 ttl=255 time=4.85 ms
+[1794165297.056374] 64 bytes from 192.168.0.5: icmp_seq=370 ttl=255 time=5.05 ms
+[1794165297.557089] 64 bytes from 192.168.0.5: icmp_seq=371 ttl=255 time=4.04 ms
+[1794165298.058438] 64 bytes from 192.168.0.5: icmp_seq=372 ttl=255 time=5.09 ms
+[1794165298.563142] 64 bytes from 192.168.0.5: icmp_seq=373 ttl=255 time=4.81 ms

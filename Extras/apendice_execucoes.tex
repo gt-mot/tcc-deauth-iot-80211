@@ -1,0 +1,115 @@
+% !TeX root = ../main.tex
+% !TeX encoding = UTF-8
+% ============================================================================
+% APÊNDICE B — Registro por execução.
+% Regra: preencher SOMENTE com dados reais (capturas .pcapng / logs de ping).
+% \PREENCHER = campo ainda não extraído; \CONFERIR{} = valor sob verificação.
+% ============================================================================
+
+\chapter{Registro dos ensaios por execução}
+\label{sec:registro-execucoes}
+
+Este apêndice detalha, execução por execução, os ensaios de desautenticação cujos resultados agregados são consolidados na Seção~\ref{subsec:consolidacao_tabelas}. Cada linha das Tabelas~\ref{tab:registro-execucoes} e~\ref{tab:registro-metricas} corresponde a um ensaio, identificado pelo nome do arquivo de evidência, e as colunas seguem as definições do dicionário de métricas da Seção~\ref{subsec:dicionario_metricas}. A coluna \textit{Janela de ataque} registra o instante do primeiro e do último quadro de desautenticação direcionado ao dispositivo, em tempo relativo da captura. Como as execuções tiveram durações diferentes, valores em segundos não são diretamente comparáveis entre linhas sem considerar a duração de cada \textit{log}.
+
+A coluna \textit{Respostas válidas} traz o número de respostas a \textit{ping} efetivamente recebidas, descartadas as duplicadas (\textit{DUP!}) e os ecos corrompidos, inclusive a primeira ocorrência, não marcada como duplicada (Seção~\ref{subsec:dicionario_metricas}). O número de requisições transmitidas e a porcentagem de perda só são informados entre parênteses nos \textit{logs} em que foi possível recuperá-los com segurança: a execução \texttt{TOMADA\_WPA2\_R01}, única encerrada com linha de estatística do \textit{ping}, e os \textit{logs} do cenário misto cujo contador de sequência não reiniciou. Nos demais \textit{logs}, o \textit{ping} foi interrompido antes da estatística final e o relógio da máquina virtual reiniciou o contador de sequência, de modo que o total de requisições não pôde ser recuperado de forma confiável; nesses casos, a medida de indisponibilidade adotada é o tempo acumulado sem resposta, baseado nas marcas de tempo absolutas.
+
+Nos cenários WPA2, os \textit{beacons} do ponto de acesso anunciam MFPC~=~0, de modo que nenhuma estação negocia PMF; o AKM e os bits MFPC/MFPR de cada dispositivo, com os números dos quadros, constam do Apêndice~\ref{sec:evidencias-rsn}. O ensaio piloto não teve \textit{ping}; a indisponibilidade foi inferida pela ausência de quadros de dados da câmera na captura (pelo menos $\approx$67,9~s), métrica distinta do tempo sem resposta a \textit{ping}. O total de 281 refere-se a todos os quadros de desautenticação da captura.
+
+A execução \texttt{TOMADA\_WPA2\_R01} é a única encerrada com linha de estatística do \textit{ping}; foi registrada com intervalo de 1~s (as demais, 0,5~s). Dos 9.242 quadros de desautenticação registrados, 9.193 tinham destino em difusão e 49 eram direcionados à tomada. A última resposta válida ocorreu aos 104,8~s do \textit{log}; a partir daí, o \textit{ping} prosseguiu até o encerramento (136 requisições) sem nova resposta válida, enquanto a captura registrava reassociações sucessivas da tomada até o fim, de modo que o tempo sem resposta é um limite inferior. Nos ensaios \texttt{TOMADA\_WPA2\_R02} e \texttt{TOMADA\_WPA2\_R03}, foram registrados, respectivamente, 6.056 e 4.792 quadros de desautenticação, dos quais 5.207 e 4.235 em difusão e 843 e 510 direcionados à tomada. O método de ataque foi o mesmo dos demais ensaios; a causa da maior proporção de quadros em difusão não foi investigada. No \textit{smartphone}, os quadros de gerenciamento \textit{Action} estão protegidos no cenário misto (764 em \texttt{R01}; 505 em \texttt{R03}) e sem proteção no cenário WPA2 (Apêndice~\ref{sec:evidencias-rsn}). Os \textit{beacons} de \texttt{CAM\_WPA2\_R02} anunciam a configuração do modo misto; apesar do nome do arquivo, a execução ocorreu com o ponto de acesso em modo misto, e a câmera negociou PSK sem PMF. Nessa execução e em \texttt{CAM\_WPA3\_R01}, a câmera não voltou a responder a \textit{ping} até o fim da captura (últimas respostas válidas aos 43,0~s e 62,2~s do \textit{log}, respectivamente), e os valores são limites inferiores. Em \texttt{CAM\_WPA3\_R01}, a câmera reassociou-se várias vezes entre 44,2 e 51,9~s, durante o ataque, e não transmitiu quadros de dados após 62,9~s; a captura terminou 6,8~s após o fim do ataque; a câmera foi reiniciada manualmente após o fim da captura, e o retorno não foi registrado.
+
+A execução \texttt{PHONE\_WPA3\_R02} foi invalidada por não conter quadros de desautenticação direcionados ao \textit{smartphone} (Seção~\ref{sec:criterios_validacao}).
+
+Em \texttt{CAM\_WPA2\_R03}, nenhuma associação da câmera foi capturada; o último \textit{ping} válido ocorreu aos 94,9~s, e o intervalo sem resposta termina apenas com o encerramento da captura, aos 254,9~s, por isso é um limite inferior ($\geq$160~s). O reinício foi feito após esse encerramento. Em \texttt{CAM\_WPA2\_R04}, houve oito trocas de autenticação e associação entre 88,6 e 95,5~s, durante o ataque, todas com \textit{status} 0 e cada uma seguida de novo quadro de desautenticação, e uma nova associação em 184,5~s, após o reinício feito com a captura em andamento. O tempo sem resposta forma uma única queda contínua de 82,4~s, calculada sobre respostas válidas; as desautenticações em \textit{broadcast} começaram em 88,4~s, e a janela da tabela considera apenas os quadros direcionados à câmera.
+
+As execuções \texttt{CAM\_WPA2\_R05} e \texttt{CAM\_WPA2\_R06} foram invalidadas por não terem linha de base, isto é, respostas normais ao \textit{ping} antes do primeiro quadro de desautenticação direcionado à câmera: os quadros direcionados à câmera começaram aos 2,6~s em R05 e aos 0,5~s em R06, precedidos de quadros em difusão desde 0,4~s e 0,3~s, respectivamente. A maior queda e a recuperação da R05 e da R06, medidas pelos quadros de dados da câmera na captura, aparecem na Tabela~\ref{tab:registro-metricas} apenas como registro, sem entrar nas médias, nas figuras nem nas análises; o tempo acumulado não é informado porque, sem \textit{log} de \textit{ping} confiável, não é comparável ao das demais execuções. Além disso, o \textit{log} de \textit{ping} de R05 registra avisos de retrocesso do relógio desde o início, por isso as colunas de respostas e de tempo sem resposta a \textit{ping} não são confiáveis e não foram usadas. Os valores vêm dos quadros de dados da câmera na captura: último quadro de dados em 30,2~s (relativos ao início), retomada em 159,3~s, ou seja, 129,1~s sem dados. Foram seis associações com \textit{status} 0 entre 2,2 e 7,3~s, uma em 28,8~s, durante o ataque, e uma em 159,3~s, após o reinício manual. O retorno da função (vídeo) foi percebido pelo pesquisador às 19:31 (horário local), sem registro dos segundos. Na R06, o maior intervalo sem dados foi de 58,9~s a 164,6~s (105,7~s), e a retomada coincidiu com uma nova associação da câmera; não há registro de reinício manual.
+
+A execução \texttt{CAM\_WPA2\_R07} foi um teste de verificação da bancada, e não uma execução completa do protocolo, e por isso foi descartada da análise; a captura dura 52,9~s e registra apenas 26 quadros de desautenticação.
+
+A execução \texttt{CAM\_WPA2\_R08} tem linha de base sem ataque de 65,2~s. O \textit{log} de \textit{ping} apresenta avisos de retrocesso do relógio a partir da linha 138; por isso, o tempo sem resposta é medido pelos quadros de dados da câmera na captura: último quadro em 82,7~s e retomada em 204,5~s, ou seja, 121,8~s sem dados. Essa medida tem caráter apenas descritivo: na \texttt{CAM\_WPA2\_R03}, os quadros de dados da câmera não apresentam intervalo superior a 2~s, embora a câmera estivesse sem resposta a \textit{ping}; portanto, a ausência de dados não foi validada como indicador de indisponibilidade. Foram sete solicitações de associação entre 66,2 e 82,5~s, durante o ataque, e uma após o reinício, em 204,4~s; todas com \textit{status} 0, AKM 2 (PSK), cifra CCMP e MFPC e MFPR iguais a 0. O retorno da função (vídeo) foi percebido pelo pesquisador às 20:04 (horário local), coincidente com o aviso de religamento, sem registro dos segundos.
+
+% O tipo de coluna L{largura} é definido no preâmbulo (main.tex).
+% \begingroup ... \endgroup: a fonte menor e os ajustes valem só para as tabelas.
+
+\begingroup
+\footnotesize
+\setlength{\tabcolsep}{2.5pt}
+\renewcommand{\arraystretch}{1.1}
+\begin{longtable}{|L{2.6cm}|L{2.1cm}|L{1.6cm}|L{0.9cm}|L{2.8cm}|L{1.9cm}|L{2.6cm}|}
+\caption{Registro dos ensaios de desautenticação por execução: identificação}
+\label{tab:registro-execucoes}\\
+\hline
+\textbf{ID (arquivo)} & \textbf{Dispositivo} & \textbf{Cenário} & \textbf{Rep.} & \textbf{Segurança negociada (AKM, PMF)} & \textbf{Janela de ataque (s)} & \textbf{Respostas válidas (\textit{ping})} \\ \hline
+\endfirsthead
+\textbf{ID (arquivo)} & \textbf{Dispositivo} & \textbf{Cenário} & \textbf{Rep.} & \textbf{Segurança negociada (AKM, PMF)} & \textbf{Janela de ataque (s)} & \textbf{Respostas válidas (\textit{ping})} \\ \hline
+\endhead
+\hline
+\endfoot
+\hline
+\endlastfoot
+\multicolumn{7}{|l|}{\textbf{Cenário WPA2 (WPA2-PSK[AES], PMF não oferecido pelo ponto de acesso)}} \\ \hline
+\texttt{PILOTO\_\allowbreak{}CAM\_\allowbreak{}C1\_\allowbreak{}01} & Câmera & WPA2 & piloto & AKM 2 (PSK), sem PMF\textsuperscript{a} & 75,0--92,6 & sem \textit{ping} \\ \hline
+\texttt{TOMADA\_\allowbreak{}WPA2\_\allowbreak{}R01} & Tomada & WPA2 & 1 & AKM 2 (PSK), sem PMF\textsuperscript{a} & 73,1--136,7 & 93 (136 env.; 31,6\% perda)\textsuperscript{c} \\ \hline
+\texttt{TOMADA\_\allowbreak{}WPA2\_\allowbreak{}R02} & Tomada & WPA2 & 2 & AKM 2 (PSK), sem PMF\textsuperscript{a} & 53,9--172,5 & 176 \\ \hline
+\texttt{TOMADA\_\allowbreak{}WPA2\_\allowbreak{}R03} & Tomada & WPA2 & 3 & AKM 2 (PSK), sem PMF\textsuperscript{a} & 36,5--156,0 & 168 \\ \hline
+\texttt{LAMP\_\allowbreak{}WPA2\_\allowbreak{}R01} & Lâmpada & WPA2 & 1 & AKM 2 (PSK), sem PMF\textsuperscript{a} & 50,8--89,4 & 133 \\ \hline
+\texttt{LAMP\_\allowbreak{}WPA2\_\allowbreak{}R02} & Lâmpada & WPA2 & 2 & AKM 2 (PSK), sem PMF\textsuperscript{a} & 30,3--78,6 & 85 \\ \hline
+\texttt{LAMP\_\allowbreak{}WPA2\_\allowbreak{}R03} & Lâmpada & WPA2 & 3 & AKM 2 (PSK), sem PMF\textsuperscript{a} & 69,9--121,0 & 162 \\ \hline
+\texttt{PHONE\_\allowbreak{}WPA2\_\allowbreak{}R01} & \textit{Smartphone} & WPA2 & 1 & AKM 2 (PSK), sem PMF\textsuperscript{a,d} & 58,0--103,5 & 146 \\ \hline
+\texttt{PHONE\_\allowbreak{}WPA2\_\allowbreak{}R02} & \textit{Smartphone} & WPA2 & 2 & AKM 2 (PSK), sem PMF\textsuperscript{a,d} & 16,0--52,8 & 80 \\ \hline
+\texttt{PHONE\_\allowbreak{}WPA2\_\allowbreak{}R03} & \textit{Smartphone} & WPA2 & 3 & AKM 2 (PSK), sem PMF\textsuperscript{a,d} & 33,8--71,3 & 74 \\ \hline
+\texttt{CAM\_\allowbreak{}WPA2\_\allowbreak{}R03} & Câmera & WPA2 & 3 & não observada (sem associação na captura)\textsuperscript{g} & 95,1--150,6 & 190 \\ \hline
+\texttt{CAM\_\allowbreak{}WPA2\_\allowbreak{}R04} & Câmera & WPA2 & 4 & AKM 2 (PSK), sem PMF\textsuperscript{h} & 105,1--138,0 & 265 \\ \hline
+\texttt{CAM\_\allowbreak{}WPA2\_\allowbreak{}R05} & Câmera & WPA2 & 5 & AKM 2 (PSK), sem PMF & inválida\textsuperscript{i} & --- \\ \hline
+\texttt{CAM\_\allowbreak{}WPA2\_\allowbreak{}R06} & Câmera & WPA2 & 6 & AKM 2 (PSK), sem PMF & inválida\textsuperscript{i} & --- \\ \hline
+\texttt{CAM\_\allowbreak{}WPA2\_\allowbreak{}R08} & Câmera & WPA2 & 8 & AKM 2 (PSK), sem PMF\textsuperscript{j} & 70,4--111,4 & não usado\textsuperscript{j} \\ \hline
+\multicolumn{7}{|l|}{\textbf{Cenário WPA3 habilitado em modo misto (WPA2-PSK[AES]+WPA3-Personal)}} \\ \hline
+\texttt{CAM\_\allowbreak{}WPA2\_\allowbreak{}R02} & Câmera & misto\textsuperscript{e} & --- & AKM 2 (PSK), sem PMF & 43,8--77,7 & 85 \\ \hline
+\texttt{CAM\_\allowbreak{}WPA3\_\allowbreak{}R01} & Câmera & misto & --- & AKM 2 (PSK), sem PMF & 46,1--107,2 & 114 \\ \hline
+\texttt{TOMADA\_\allowbreak{}WPA3\_\allowbreak{}R01} & Tomada & misto & 1 & AKM 2 (PSK), sem PMF & 8,5--85,0 & 61 \\ \hline
+\texttt{LAMP\_\allowbreak{}WPA3\_\allowbreak{}R01} & Lâmpada & misto & 1 & AKM 8 (SAE), PMF obrig. & 31,2--76,9 & 178 (178 env.; 0\% perda) \\ \hline
+\texttt{PHONE\_\allowbreak{}WPA3\_\allowbreak{}R01} & \textit{Smartphone} & misto & 1 & AKM não obs.; indício de PMF\textsuperscript{d} & 65,0--143,1 & 259 (310 env.; 16,5\% perda) \\ \hline
+\texttt{PHONE\_\allowbreak{}WPA3\_\allowbreak{}R03} & \textit{Smartphone} & misto & 3 & AKM não obs.; indício de PMF\textsuperscript{d} & 15,0--70,4 & 113 (161 env.; 29,8\% perda) \\ \hline
+\texttt{PHONE\_\allowbreak{}WPA3\_\allowbreak{}R02} & \textit{Smartphone} & misto & 2 & --- & inválida\textsuperscript{f} & --- \\ \hline
+\end{longtable}
+\vspace{-1ex}\noindent{\footnotesize Fonte: elaborado pelo autor a partir dos arquivos de captura e dos \textit{logs} de \textit{ping} (2026). ``Respostas válidas'': respostas a \textit{ping} recebidas, descartadas as duplicadas (\textit{DUP!}). \textsuperscript{a}MFPC = 0 no WPA2 (ver texto). \textsuperscript{c}Única execução com estatística do \textit{ping}; limite inferior (ver texto). \textsuperscript{d}\textit{Action} protegidos (ver texto). \textsuperscript{e}Câmera em modo misto: \textit{beacons} e limites inferiores (ver texto). \textsuperscript{f}Execução invalidada (ver Seção~\ref{sec:criterios_validacao}). \textsuperscript{g}Limite inferior (ver texto). \textsuperscript{h}Reassociações durante o ataque (ver texto). \textsuperscript{i}Invalidadas por falta de linha de base (ver texto). \textsuperscript{j}Medida pela captura (ver texto).}
+
+\begin{longtable}{|L{2.8cm}|L{2.2cm}|L{2.2cm}|L{1.9cm}|L{3.4cm}|L{1.8cm}|}
+\caption{Registro dos ensaios de desautenticação por execução: métricas}
+\label{tab:registro-metricas}\\
+\hline
+\textbf{ID (arquivo)} & \textbf{Tempo acum. sem resposta (s)} & \textbf{Maior queda contínua (s)} & \textbf{Deauth no disp.} & \textbf{Recuperação de rede} & \textbf{Interv. manual} \\ \hline
+\endfirsthead
+\textbf{ID (arquivo)} & \textbf{Tempo acum. sem resposta (s)} & \textbf{Maior queda contínua (s)} & \textbf{Deauth no disp.} & \textbf{Recuperação de rede} & \textbf{Interv. manual} \\ \hline
+\endhead
+\hline
+\endfoot
+\hline
+\endlastfoot
+\multicolumn{6}{|l|}{\textbf{Cenário WPA2 (WPA2-PSK[AES], PMF não oferecido pelo ponto de acesso)}} \\ \hline
+\texttt{PILOTO\_\allowbreak{}CAM\_\allowbreak{}C1\_\allowbreak{}01} & n.\,a.\textsuperscript{b} & n.\,a.\textsuperscript{b} & 281\textsuperscript{b} & não observada até o fim da captura & Sim \\ \hline
+\texttt{TOMADA\_\allowbreak{}WPA2\_\allowbreak{}R01} & $\geq$45,4\textsuperscript{c} & $\geq$33,2\textsuperscript{c} & 49\textsuperscript{c} & não observada até o fim da captura & Não \\ \hline
+\texttt{TOMADA\_\allowbreak{}WPA2\_\allowbreak{}R02} & 106,4 & 80,7 & 843 & automática (intermitente) & Não \\ \hline
+\texttt{TOMADA\_\allowbreak{}WPA2\_\allowbreak{}R03} & 93,6 & 48,3 & 510 & automática (intermitente) & Não \\ \hline
+\texttt{LAMP\_\allowbreak{}WPA2\_\allowbreak{}R01} & 40,1 & 40,1 & 356 & automática (intermitente) & Não \\ \hline
+\texttt{LAMP\_\allowbreak{}WPA2\_\allowbreak{}R02} & 49,4 & 49,4 & 401 & automática (intermitente) & Não \\ \hline
+\texttt{LAMP\_\allowbreak{}WPA2\_\allowbreak{}R03} & 52,8 & 52,8 & 458 & automática (intermitente) & Não \\ \hline
+\texttt{PHONE\_\allowbreak{}WPA2\_\allowbreak{}R01} & 73,1 & 73,1 & 602 & manual (seleção da rede) & Sim \\ \hline
+\texttt{PHONE\_\allowbreak{}WPA2\_\allowbreak{}R02} & 66,5 & 66,5 & 438 & manual (seleção da rede) & Sim \\ \hline
+\texttt{PHONE\_\allowbreak{}WPA2\_\allowbreak{}R03} & 65,3 & 55,8 & 467 & manual (seleção da rede) & Sim \\ \hline
+\texttt{CAM\_\allowbreak{}WPA2\_\allowbreak{}R03} & $\geq$160\textsuperscript{g} & $\geq$160\textsuperscript{g} & 792 & não observada até o fim da captura & Sim \\ \hline
+\texttt{CAM\_\allowbreak{}WPA2\_\allowbreak{}R04} & 82,4\textsuperscript{h} & 82,4\textsuperscript{h} & 459 & retorno só após reinício manual & Sim \\ \hline
+\texttt{CAM\_\allowbreak{}WPA2\_\allowbreak{}R05} & --- & 129,1\textsuperscript{i} & 550 & rede: 159,3 s, após reinício manual\textsuperscript{i} & Sim \\ \hline
+\texttt{CAM\_\allowbreak{}WPA2\_\allowbreak{}R06} & --- & 105,7\textsuperscript{i} & 421 & rede: 164,6 s\textsuperscript{i} & --- \\ \hline
+\texttt{CAM\_\allowbreak{}WPA2\_\allowbreak{}R08} & --- & 121,8\textsuperscript{j} & 291 & rede: 204,5 s, após reinício manual\textsuperscript{j} & Sim \\ \hline
+\multicolumn{6}{|l|}{\textbf{Cenário WPA3 habilitado em modo misto (WPA2-PSK[AES]+WPA3-Personal)}} \\ \hline
+\texttt{CAM\_\allowbreak{}WPA2\_\allowbreak{}R02} & $\geq$55,8\textsuperscript{e} & $\geq$55,8\textsuperscript{e} & 452 & não espontânea (sem reassociação) & Sim \\ \hline
+\texttt{CAM\_\allowbreak{}WPA3\_\allowbreak{}R01} & $\geq$56,5\textsuperscript{e} & $\geq$51,3\textsuperscript{e} & 587 & não observada até o fim da captura & Sim \\ \hline
+\texttt{TOMADA\_\allowbreak{}WPA3\_\allowbreak{}R01} & 72,5 & 63,3 & 712 & automática (intermitente) & Não \\ \hline
+\texttt{LAMP\_\allowbreak{}WPA3\_\allowbreak{}R01} & 0,0 & 0,0 & 425 & não afetada & Não \\ \hline
+\texttt{PHONE\_\allowbreak{}WPA3\_\allowbreak{}R01} & 22,8 & 4,1 & 639 & não afetada (sem perda de associação) & Não \\ \hline
+\texttt{PHONE\_\allowbreak{}WPA3\_\allowbreak{}R03} & 24,7 & 6,9 & 517 & não afetada (sem perda de associação) & Não \\ \hline
+\texttt{PHONE\_\allowbreak{}WPA3\_\allowbreak{}R02} & --- & --- & 0\textsuperscript{f} & --- & --- \\ \hline
+\end{longtable}
+\vspace{-1ex}\noindent{\footnotesize Fonte: elaborado pelo autor a partir dos arquivos de captura e dos \textit{logs} de \textit{ping} (2026). n.\,a.: não aplicável. ``Deauth no disp.'': quadros de desautenticação com o endereço do dispositivo como origem ou destino. \textsuperscript{b}Piloto sem \textit{ping} (ver texto). \textsuperscript{c}Única execução com estatística do \textit{ping}; limite inferior (ver texto). \textsuperscript{e}Câmera em modo misto: \textit{beacons} e limites inferiores (ver texto). \textsuperscript{f}Execução invalidada (ver Seção~\ref{sec:criterios_validacao}). \textsuperscript{g}Limite inferior (ver texto). \textsuperscript{h}Reassociações durante o ataque (ver texto). \textsuperscript{i}Execução invalidada por falta de linha de base; maior queda e recuperação medidas pelos quadros de dados da câmera na captura, apenas como registro, e excluídas das médias, figuras e análises (ver texto). \textsuperscript{j}Medida pela captura (ver texto).}
+
+\endgroup

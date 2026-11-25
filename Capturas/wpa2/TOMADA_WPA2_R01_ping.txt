@@ -1,0 +1,266 @@
+PING 192.168.0.5 (192.168.0.5) 56(84) bytes of data.
+[1794163245.538770] 64 bytes from 192.168.0.5: icmp_seq=1 ttl=255 time=9.73 ms
+[1794163246.548879] 64 bytes from 192.168.0.5: icmp_seq=2 ttl=255 time=6.47 ms
+[1794163247.547322] 64 bytes from 192.168.0.5: icmp_seq=3 ttl=255 time=4.46 ms
+[1794163248.555467] 64 bytes from 192.168.0.5: icmp_seq=4 ttl=255 time=5.74 ms
+[1794163249.557600] 64 bytes from 192.168.0.5: icmp_seq=5 ttl=255 time=4.04 ms
+[1794163250.572867] 64 bytes from 192.168.0.5: icmp_seq=6 ttl=255 time=10.0 ms
+[1794163251.574104] 64 bytes from 192.168.0.5: icmp_seq=7 ttl=255 time=4.55 ms
+[1794163252.574279] 64 bytes from 192.168.0.5: icmp_seq=8 ttl=255 time=3.78 ms
+[1794163253.616790] 64 bytes from 192.168.0.5: icmp_seq=9 ttl=255 time=15.2 ms
+[1794163254.744939] 64 bytes from 192.168.0.5: icmp_seq=10 ttl=255 time=5.77 ms
+[1794163255.744572] 64 bytes from 192.168.0.5: icmp_seq=11 ttl=255 time=4.11 ms
+[1794163256.747981] 64 bytes from 192.168.0.5: icmp_seq=12 ttl=255 time=4.61 ms
+[1794163257.784757] 64 bytes from 192.168.0.5: icmp_seq=13 ttl=255 time=9.12 ms
+[1794163258.791114] 64 bytes from 192.168.0.5: icmp_seq=14 ttl=255 time=3.71 ms
+[1794163259.792246] 64 bytes from 192.168.0.5: icmp_seq=15 ttl=255 time=4.12 ms
+[1794163260.795320] 64 bytes from 192.168.0.5: icmp_seq=16 ttl=255 time=3.96 ms
+[1794163261.805055] 64 bytes from 192.168.0.5: icmp_seq=17 ttl=255 time=4.46 ms
+[1794163262.843463] 64 bytes from 192.168.0.5: icmp_seq=18 ttl=255 time=4.50 ms
+[1794163263.842213] 64 bytes from 192.168.0.5: icmp_seq=19 ttl=255 time=4.30 ms
+[1794163264.850955] 64 bytes from 192.168.0.5: icmp_seq=20 ttl=255 time=8.20 ms
+[1794163265.855008] 64 bytes from 192.168.0.5: icmp_seq=21 ttl=255 time=6.55 ms
+[1794163266.875623] 64 bytes from 192.168.0.5: icmp_seq=22 ttl=255 time=5.32 ms
+[1794163267.892611] 64 bytes from 192.168.0.5: icmp_seq=23 ttl=255 time=4.11 ms
+[1794163268.928283] 64 bytes from 192.168.0.5: icmp_seq=24 ttl=255 time=5.23 ms
+[1794163269.944426] 64 bytes from 192.168.0.5: icmp_seq=25 ttl=255 time=4.29 ms
+[1794163271.024273] 64 bytes from 192.168.0.5: icmp_seq=26 ttl=255 time=6.43 ms
+[1794163272.044900] 64 bytes from 192.168.0.5: icmp_seq=27 ttl=255 time=4.16 ms
+[1794163273.078058] 64 bytes from 192.168.0.5: icmp_seq=28 ttl=255 time=4.86 ms
+[1794163274.094443] 64 bytes from 192.168.0.5: icmp_seq=29 ttl=255 time=4.01 ms
+[1794163275.098090] 64 bytes from 192.168.0.5: icmp_seq=30 ttl=255 time=4.20 ms
+[1794163276.115492] 64 bytes from 192.168.0.5: icmp_seq=31 ttl=255 time=5.76 ms
+[1794163277.116891] 64 bytes from 192.168.0.5: icmp_seq=32 ttl=255 time=4.17 ms
+[1794163278.122986] 64 bytes from 192.168.0.5: icmp_seq=33 ttl=255 time=4.45 ms
+[1794163279.124663] 64 bytes from 192.168.0.5: icmp_seq=34 ttl=255 time=3.45 ms
+[1794163280.192886] 64 bytes from 192.168.0.5: icmp_seq=35 ttl=255 time=5.21 ms
+[1794163281.192235] 64 bytes from 192.168.0.5: icmp_seq=36 ttl=255 time=4.85 ms
+[1794163282.204448] 64 bytes from 192.168.0.5: icmp_seq=37 ttl=255 time=4.31 ms
+[1794163283.217517] 64 bytes from 192.168.0.5: icmp_seq=38 ttl=255 time=13.7 ms
+[1794163284.238209] 64 bytes from 192.168.0.5: icmp_seq=39 ttl=255 time=3.62 ms
+[1794163285.251428] 64 bytes from 192.168.0.5: icmp_seq=40 ttl=255 time=4.27 ms
+[1794163286.272028] 64 bytes from 192.168.0.5: icmp_seq=41 ttl=255 time=3.89 ms
+[1794163287.359964] 64 bytes from 192.168.0.5: icmp_seq=42 ttl=255 time=6.86 ms
+[1794163288.382432] 64 bytes from 192.168.0.5: icmp_seq=43 ttl=255 time=26.2 ms
+[1794163289.362688] 64 bytes from 192.168.0.5: icmp_seq=44 ttl=255 time=4.48 ms
+[1794163290.367138] 64 bytes from 192.168.0.5: icmp_seq=45 ttl=255 time=4.27 ms
+[1794163291.377278] 64 bytes from 192.168.0.5: icmp_seq=46 ttl=255 time=5.44 ms
+[1794163292.372858] 64 bytes from 192.168.0.5: icmp_seq=47 ttl=255 time=3.97 ms
+[1794163293.377252] 64 bytes from 192.168.0.5: icmp_seq=48 ttl=255 time=5.11 ms
+[1794163294.379890] 64 bytes from 192.168.0.5: icmp_seq=49 ttl=255 time=4.14 ms
+[1794163295.383985] 64 bytes from 192.168.0.5: icmp_seq=50 ttl=255 time=4.94 ms
+[1794163296.399200] 64 bytes from 192.168.0.5: icmp_seq=51 ttl=255 time=4.48 ms
+[1794163297.397676] 64 bytes from 192.168.0.5: icmp_seq=52 ttl=255 time=4.02 ms
+[1794163298.491448] 64 bytes from 192.168.0.5: icmp_seq=53 ttl=255 time=5.60 ms
+[1794163299.603038] 64 bytes from 192.168.0.5: icmp_seq=54 ttl=255 time=10.3 ms
+[1794163300.611274] 64 bytes from 192.168.0.5: icmp_seq=55 ttl=255 time=4.54 ms
+[1794163301.616080] 64 bytes from 192.168.0.5: icmp_seq=56 ttl=255 time=6.45 ms
+[1794163302.615677] 64 bytes from 192.168.0.5: icmp_seq=57 ttl=255 time=4.73 ms
+[1794163303.650386] 64 bytes from 192.168.0.5: icmp_seq=58 ttl=255 time=4.99 ms
+[1794163304.659029] 64 bytes from 192.168.0.5: icmp_seq=59 ttl=255 time=4.38 ms
+[1794163305.682189] 64 bytes from 192.168.0.5: icmp_seq=60 ttl=255 time=4.52 ms
+[1794163306.683052] 64 bytes from 192.168.0.5: icmp_seq=61 ttl=255 time=5.68 ms
+[1794163307.695109] 64 bytes from 192.168.0.5: icmp_seq=62 ttl=255 time=4.25 ms
+[1794163308.708833] 64 bytes from 192.168.0.5: icmp_seq=63 ttl=255 time=4.26 ms
+[1794163309.709269] 64 bytes from 192.168.0.5: icmp_seq=64 ttl=255 time=4.50 ms
+[1794163310.711673] 64 bytes from 192.168.0.5: icmp_seq=65 ttl=255 time=5.36 ms
+[1794163311.719204] 64 bytes from 192.168.0.5: icmp_seq=66 ttl=255 time=4.15 ms
+[1794163312.731847] 64 bytes from 192.168.0.5: icmp_seq=67 ttl=255 time=9.70 ms
+[1794163313.728881] 64 bytes from 192.168.0.5: icmp_seq=68 ttl=255 time=3.65 ms
+[1794163314.782997] 64 bytes from 192.168.0.5: icmp_seq=69 ttl=255 time=5.82 ms
+[1794163315.783648] 64 bytes from 192.168.0.5: icmp_seq=70 ttl=255 time=4.32 ms
+[1794163316.789197] 64 bytes from 192.168.0.5: icmp_seq=71 ttl=255 time=6.60 ms
+[1794163317.831016] 64 bytes from 192.168.0.5: icmp_seq=72 ttl=255 time=23.7 ms
+[1794163324.696786] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 10 7f aa f3 0 4e 7b c2 f0 6a 0 0 0 0 2 3f f 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+[1794163324.696888] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 10 7f aa f3 0 4e 7b c2 f0 6a 0 0 0 0 2 3f f 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+[1794163324.696937] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 10 7f aa f3 0 4e 7b c2 f0 6a 0 0 0 0 2 3f f 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+[1794163324.696980] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 10 7f aa f3 0 4e 7b c2 f0 6a 0 0 0 0 2 3f f 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+[1794163324.697024] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 10 7f aa f3 0 4e 7b c2 f0 6a 0 0 0 0 2 3f f 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+[1794163324.697072] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 10 7f aa f3 0 4e 7b c2 f0 6a 0 0 0 0 2 3f f 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+[1794163327.694676] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 cf 14 aa f3 0 51 7f c2 f0 6a 0 0 0 0 4e a6 0 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+[1794163327.694759] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 cf 14 aa f3 0 51 7f c2 f0 6a 0 0 0 0 4e a6 0 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+[1794163327.694793] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 cf 14 aa f3 0 51 7f c2 f0 6a 0 0 0 0 4e a6 0 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+[1794163330.086051] 64 bytes from 192.168.0.5: icmp_seq=84 ttl=255 time=6.19 ms
+[1794163331.084761] 64 bytes from 192.168.0.5: icmp_seq=85 ttl=255 time=4.43 ms
+[1794163332.100796] 64 bytes from 192.168.0.5: icmp_seq=86 ttl=255 time=16.1 ms
+[1794163333.091076] 64 bytes from 192.168.0.5: icmp_seq=87 ttl=255 time=4.98 ms
+[1794163334.092903] 64 bytes from 192.168.0.5: icmp_seq=88 ttl=255 time=6.00 ms
+[1794163335.092350] 64 bytes from 192.168.0.5: icmp_seq=89 ttl=255 time=4.37 ms
+[1794163336.096778] 64 bytes from 192.168.0.5: icmp_seq=90 ttl=255 time=6.03 ms
+[1794163337.098279] 64 bytes from 192.168.0.5: icmp_seq=91 ttl=255 time=6.25 ms
+[1794163338.098020] 64 bytes from 192.168.0.5: icmp_seq=92 ttl=255 time=4.52 ms
+[1794163339.132962] 64 bytes from 192.168.0.5: icmp_seq=93 ttl=255 time=10.1 ms
+[1794163340.134876] 64 bytes from 192.168.0.5: icmp_seq=94 ttl=255 time=9.78 ms
+[1794163341.141879] 64 bytes from 192.168.0.5: icmp_seq=95 ttl=255 time=8.02 ms
+[1794163342.229974] 64 bytes from 192.168.0.5: icmp_seq=96 ttl=255 time=18.1 ms
+[1794163343.238368] 64 bytes from 192.168.0.5: icmp_seq=97 ttl=255 time=10.6 ms
+[1794163344.238175] 64 bytes from 192.168.0.5: icmp_seq=98 ttl=255 time=7.64 ms
+[1794163345.318064] 64 bytes from 192.168.0.5: icmp_seq=99 ttl=255 time=8.15 ms
+[1794163346.327578] 64 bytes from 192.168.0.5: icmp_seq=100 ttl=255 time=7.98 ms
+[1794163347.360881] 64 bytes from 192.168.0.5: icmp_seq=101 ttl=255 time=34.7 ms
+[1794163348.352499] 64 bytes from 192.168.0.5: icmp_seq=102 ttl=255 time=8.40 ms
+[1794163349.351830] 64 bytes from 192.168.0.5: icmp_seq=103 ttl=255 time=5.90 ms
+[1794163350.369258] 64 bytes from 192.168.0.5: icmp_seq=104 ttl=255 time=7.44 ms
+[1794163364.180506] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 be 29 aa f3 0 75 a3 c2 f0 6a 0 0 0 0 31 6d a 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+[1794163364.180581] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 be 29 aa f3 0 75 a3 c2 f0 6a 0 0 0 0 31 6d a 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+[1794163364.180607] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 be 29 aa f3 0 75 a3 c2 f0 6a 0 0 0 0 31 6d a 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+[1794163364.180630] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 be 29 aa f3 0 75 a3 c2 f0 6a 0 0 0 0 31 6d a 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+[1794163364.180653] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 be 29 aa f3 0 75 a3 c2 f0 6a 0 0 0 0 31 6d a 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+[1794163364.180676] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 be 29 aa f3 0 75 a3 c2 f0 6a 0 0 0 0 31 6d a 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+[1794163364.180699] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 be 29 aa f3 0 75 a3 c2 f0 6a 0 0 0 0 31 6d a 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+[1794163364.180721] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 be 29 aa f3 0 75 a3 c2 f0 6a 0 0 0 0 31 6d a 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+[1794163364.180743] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 be 29 aa f3 0 75 a3 c2 f0 6a 0 0 0 0 31 6d a 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+[1794163364.180765] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 be 29 aa f3 0 75 a3 c2 f0 6a 0 0 0 0 31 6d a 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+[1794163364.180788] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 be 29 aa f3 0 75 a3 c2 f0 6a 0 0 0 0 31 6d a 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+[1794163364.180832] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 be 29 aa f3 0 75 a3 c2 f0 6a 0 0 0 0 31 6d a 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+[1794163364.180853] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 be 29 aa f3 0 75 a3 c2 f0 6a 0 0 0 0 31 6d a 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+[1794163364.180875] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 be 29 aa f3 0 75 a3 c2 f0 6a 0 0 0 0 31 6d a 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+[1794163364.180896] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 be 29 aa f3 0 75 a3 c2 f0 6a 0 0 0 0 31 6d a 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+[1794163367.675275] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 aa 73 aa f3 0 78 a6 c2 f0 6a 0 0 0 0 41 20 b 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+[1794163367.675332] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 aa 73 aa f3 0 78 a6 c2 f0 6a 0 0 0 0 41 20 b 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+[1794163367.675356] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 aa 73 aa f3 0 78 a6 c2 f0 6a 0 0 0 0 41 20 b 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+[1794163370.673586] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 ee fb aa f3 0 7b a9 c2 f0 6a 0 0 0 0 f9 94 b 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+[1794163370.673734] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 ee fb aa f3 0 7b a9 c2 f0 6a 0 0 0 0 f9 94 b 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+[1794163370.673768] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 ee fb aa f3 0 7b a9 c2 f0 6a 0 0 0 0 f9 94 b 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+[1794163373.671815] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 da bd aa f3 0 7e ac c2 f0 6a 0 0 0 0 9 d0 c 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+[1794163373.672024] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 da bd aa f3 0 7e ac c2 f0 6a 0 0 0 0 9 d0 c 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+[1794163373.672267] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 da bd aa f3 0 7e ac c2 f0 6a 0 0 0 0 9 d0 c 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+[1794163376.671628] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 84 53 aa f3 0 81 af c2 f0 6a 0 0 0 0 5b 37 e 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+[1794163376.671725] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 84 53 aa f3 0 81 af c2 f0 6a 0 0 0 0 5b 37 e 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+[1794163376.671915] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 84 53 aa f3 0 81 af c2 f0 6a 0 0 0 0 5b 37 e 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+[1794163379.669304] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 eb 6a aa f3 0 84 b3 c2 f0 6a 0 0 0 0 fe 1c 0 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+[1794163379.669587] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 eb 6a aa f3 0 84 b3 c2 f0 6a 0 0 0 0 fe 1c 0 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+[1794163379.669616] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 eb 6a aa f3 0 84 b3 c2 f0 6a 0 0 0 0 fe 1c 0 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+[1794163382.667506] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 1b c9 aa f3 0 87 b6 c2 f0 6a 0 0 0 0 ca bb 0 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+[1794163382.667566] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 1b c9 aa f3 0 87 b6 c2 f0 6a 0 0 0 0 ca bb 0 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+[1794163382.667613] 64 bytes from 192.168.0.5: icmp_seq=0 ttl=255 time=0.000 ms (DUP!)
+wrong data byte #16 should be 0x10 but was 0xc0
+#16	c0 a8 0 5 8 0 1b c9 aa f3 0 87 b6 c2 f0 6a 0 0 0 0 ca bb 0 0 0 0 0 0 10 11 12 13 
+#48	14 15 16 17 18 19 1a 1b 
+
+--- 192.168.0.5 ping statistics ---
+136 packets transmitted, 94 received, +41 duplicates, 30.8824% packet loss, time 137541ms
+rtt min/avg/max/mdev = 0.000/4.627/34.745/5.095 ms, pipe 136

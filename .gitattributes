@@ -1,0 +1,4 @@
+# Mantém os dados byte a byte (os hashes de SHA256SUMS.txt dependem disso)
+Capturas/** -text
+*.pcapng binary
+SHA256SUMS.txt -text
